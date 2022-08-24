@@ -1,11 +1,17 @@
-body {
-    background-color:#fff;
-}
-header {
-    display:flex;
-  
-}
-.container{
-    color:blue;
-}
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
 
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/button";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+ 
+
+@import "./pages/home_page";
+@import "./pages/menu";

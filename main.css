@@ -1,13 +1,10 @@
-body {
-  background-color: #fff;
+* {
+  box-sizing: border-box;
 }
 
-header {
-  display: flex;
-}
-
-container {
-  color: blue;
+.logo {
+  text-align: center;
+  font-family: "Shrikhand";
 }
 
 /*# sourceMappingURL=main.css.map */
