@@ -1,0 +1,19 @@
+.button{
+    display: inline-block;
+    width:auto;
+    margin:$margin-elements;
+
+    &__style{
+      font-size: 1rem;
+       color: $colour-text;
+     
+    background: linear-gradient(to top, $colour-primary, $colour-secondary);  
+    cursor: pointer;}
+     &__style--size{ 
+        height: 40px;}
+    &__style--border{
+        border-radius: 45px 45px;
+        border:none;
+    box-shadow: 0 1rem 4rem rgb(68, 65, 65);}
+
+}

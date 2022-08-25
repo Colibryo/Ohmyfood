@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="icon" type="image/png" href="public/assets/logo/_img/logo/ohmyfood.png" />
+    <link rel="icon" type="image/png" href="assets/logo/ohmyfood.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap"
@@ -17,7 +15,6 @@
     <script src="https://kit.fontawesome.com/2f306ee3dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <title>Ohmyfood : site de réservation gastronomique</title>
-
 </head>
 
 <body>
@@ -25,14 +22,13 @@
         <h1>ohmyfood</h1>
     </header>
     <main>
-        <section class="presentation">
-            <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+        <section  class="presentation">
+            <div class="presentation__location"><i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p></div>
             <h2 class="presentation__heading">Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <p class="presentation__discover">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
 
-            <div class="container-button">
-
-                <button class="button__color hover--change darken--border">
+            <div class="button">
+                <button class="button__style button__style--size button__style--border button__style--hover button__style--border">
                     Explorez nos restaurants
                 </button>
             </div>
@@ -40,22 +36,17 @@
 
         <section class="functioning">
             <h2 class="functioning__heading">Fonctionnement</h2>
-
-            <div>
-                <p>
+            <div class="functioning__container">
+                <p class="functioning__explain"><span class="number">1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>Choissez un restaurant
                 </p>
-            </div>
-            <div>
-
-                <p>
-                    <i class="fa-solid fa-list"></i>
+            
+                <p class="functioning__explain"><span class="number">2</span>
+                    <span class="functionning__icon"><i class="fa-solid fa-list"></i></span>
                     Composez votre menu
                 </p>
-            </div>
-
-            <div>
-                <p>
+            
+                <p class="functioning__explain"><span class="number">3</span>
                     <i class="fa-solid fa-store"></i>Dégustez au restaurant
                 </p>
             </div>
@@ -65,28 +56,26 @@
         <!--cartes-->
 
         <section class="container-restaurant">
-            <h2>Restaurants</h2>
-            <div>
+            <h2 class="container-restaurant__heading">Restaurants</h2>
+            
+            <div class="restaurant">
+                <a href="La_palette_du_goût.html" title="restaurant gastronomique" target="_blank">
 
-
-                <div class="card"><a href="La_palette_du_goût.html" title="restaurant gastronomique" target="_blank">
-                        <img src="assets/img//La_palette_du_goût.jpg" alt="restaurant la palette du goût">
-                        <div class="body">
-                            <h3>La palette du goût </h3>
-                            <p>Ménilmontant</p>
-                            <!--coeur*2-->
-                            <p><i class="fa-solid fa-heart"></i> </p>
-                            <p><i class="fa-regular fa-heart"></i></p>
-                        </div>
-
-                        <p class="new"><span>Nouveau</span></p>
-                    </a>
-                </div>
+                    <div class="card">
+                            <img src="assets/img//La_palette_du_goût.jpg" alt="restaurant la palette du goût">
+                            <div class="body">
+                                <h3 class="card__heading">La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                                <!--coeur*2-->
+                                <p><i class="fa-solid fa-heart"></i> </p>
+                                <p><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                            <button class="btn">Nouveau</button>
+                    </div>
+                </a>
             </div>
 
-            <div>
-
-
+            
                 <div class="card"><a href="La_note_enchantée.html" title="restaurant gastronomique" target="_blank">
                         <img src="assets/img//La_note_enchantée.jpg" alt="restaurant la note enchantée">
                         <div class="body">
@@ -98,11 +87,11 @@
                         </div>
                     </a>
                 </div>
-                    <p class="new"><span>Nouveau</span></p>
+                    <button class="btn" class="new">Nouveau</button>
 
-            </div>
+            
 
-            <div>
+            
                 <div class="card">
                     <a href="A_la_Française.html" title="restaurant gastronomique" target="_blank">
                         <img src="assets/img/A_la_Française.jpg" alt="restaurant à la Française" />
@@ -115,7 +104,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+        
 
             <div class="card">
                 <a href="menu_Le_délice_des_sens.html" title="restaurant gastronomique" target="_blank">
@@ -123,7 +112,7 @@
                     <div class="body">
                         <h3>Le délice des sens</h3>
                         <p>Folie Méricourt</p>
-                        <!--coeur*2-->
+                        <!--coeur*2 pour switch-->
                         <p> <i class="fa-solid fa-heart"></i> </p>
                         <p><i class="fa-regular fa-heart"></i></p>
                     </div>
