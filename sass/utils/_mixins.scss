@@ -1,0 +1,3 @@
+@mixin initial-shadow-element ($size: $shadow-size, $blur-effect: $shadow-blur-effect, $colour: $colour-shadow ){
+box-shadow: $size $blur-effect $colour;
+}

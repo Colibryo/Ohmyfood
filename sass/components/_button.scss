@@ -1,19 +1,23 @@
-.button{
+.button {
     display: inline-block;
-    width:auto;
-    margin:$margin-elements;
+    width: auto;
+    margin: $margin-elements;
 
-    &__style{
-      font-size: 1rem;
-       color: $colour-text;
-     
-    background: linear-gradient(to top, $colour-primary, $colour-secondary);  
-    cursor: pointer;}
-     &__style--size{ 
-        height: 40px;}
-    &__style--border{
+    &__style {
+        font-size: 1rem;
+        color: $colour-text;
+        padding: 1rem 1rem 1rem 1rem;
+        background: linear-gradient(to top, $colour-primary, $colour-secondary);
+        cursor: pointer;
+    }
+
+    &__style--size {
+        height: 3rem;
+    }
+
+    &__style--border {
         border-radius: 45px 45px;
-        border:none;
-    box-shadow: 0 1rem 4rem rgb(68, 65, 65);}
-
+        border: none;
+        @include initial-shadow-element;
+    }
 }
