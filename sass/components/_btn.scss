@@ -1,0 +1,19 @@
+.btn{
+position:absolute;
+bottom: 10rem;
+left:5rem;
+
+&__new{
+   
+   width: auto;
+   height:auto;
+   margin: $margin-elements;
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: $colour-tertiary;
+    cursor: pointer;
+    height: 2rem;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+}
