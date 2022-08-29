@@ -15,27 +15,28 @@ footer {
 
     &__link-icon {
         display: inline-block;
-        height : 1rem;
+        height: 1rem;
         position: relative;
-        right : 0.5rem;
+        right: 0.5rem;
         line-height: 1rem;
-        padding : 0 1rem 0 1rem;
-        }
+        padding: 0 1rem 0 1rem;
+    }
 
     &__link-icon .fa-utensils {
         position: relative;
-        right:0.5rem;
+        right: 0.5rem;
     }
 
     &__link-icon .fa-handshake-angle {
         position: relative;
-        right:0.5rem;
+        right: 0.5rem;
     }
 
     &__link--color {
         color: white;
     }
-    &__link--color:hover{
-        color:$colour-secondary;
-}
+
+    &__link--color:hover {
+        color: $colour-secondary;
+    }
 }

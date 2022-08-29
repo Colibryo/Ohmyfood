@@ -1,19 +1,17 @@
-.btn{
-position:absolute;
-top: 0.5rem;
-right:1rem;
+.btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
 
-&__new{
-   
-   width: 90%;
-   height:auto;
-   margin: $margin-elements;
-    font-size: 1rem;
-     
-    background: $colour-tertiary;
-    cursor: pointer;
-    height: 2rem;
-    border-radius: 0.188rem 0.188rem 0.188rem 0.188rem;
-    border: none;
-}
+    &__new {
+        width: 90%;
+        height: auto;
+        margin: $margin-elements;
+        font-size: 1rem;
+        background: $colour-tertiary;
+        cursor: pointer;
+        height: 2rem;
+        border-radius: 0.188rem 0.188rem 0.188rem 0.188rem;
+        border: none;
+    }
 }
