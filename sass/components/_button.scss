@@ -15,7 +15,7 @@
         @include initial-shadow-element;
         transform: scale(1);
         transition: all 300ms;
-        transition: transform 500ms ease-in-out;
+        transition: transform 300ms ease-in-out;
 
         &:hover {
             transform: scale(1.2, 1.1);
