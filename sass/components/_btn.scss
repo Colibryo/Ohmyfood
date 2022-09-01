@@ -1,11 +1,11 @@
 .btn {
     position: absolute;
     top: 0.5rem;
-    right: 1rem;
+    right: 2rem;
   
     &__new {
         @include text-color;
-        width: 90%;
+        width: 80%;
         height: auto;
         margin: $margin-elements;
         font-size: 1rem;
