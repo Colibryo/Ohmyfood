@@ -1,6 +1,12 @@
 .logo {
     font-size: 2rem;
-    text-align:center;
-    font-family:'Shrikhand','Robot', sans-serif;
+    text-align: center;
+
+    @include tablette-only {
+        text-align: start;
+
+    }
+
+    font-family:'Shrikhand', 'Robot', sans-serif;
     margin:$margin-elements;
 }

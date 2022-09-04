@@ -2,18 +2,26 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablette-only {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 .presentation {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20rem;
+    height: auto;
     text-align: center;
     align-items: center;
     margin-bottom: 5rem;
     background-color: rgba(7, 15, 56, 0.03);
-     
+
+    @include tablette-only {
+        margin-bottom: 1rem;
+    }
 
     &__location {
         width: 100%;
@@ -33,9 +41,8 @@ main {
 
     &__heading {
         font-weight: 900;
-        font-size: 1.6rem;
         margin: 1rem 2.5rem 0.5rem 2.5rem;
-    }  
+    }
 
     &__discover {
         margin: 0.5rem 1.5rem 1rem 1.5rem;
@@ -49,8 +56,27 @@ main {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin: 1rem 1rem 5rem 1rem;
+    margin: 0 1rem 5rem 1rem;
 
+    @include tablette-only {
+        width: 35%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0;
+        padding: 1rem;
+        background-color: $colour-secondary;
+    }
+
+    &__heading {
+        padding: 0 1rem 0 1rem;
+
+        @include tablette-only {
+            width: 100%;
+
+            margin: 2rem;
+            padding: 0;
+        }
+    }
 
     &__container {
         width: auto;
@@ -58,6 +84,11 @@ main {
         flex-direction: column;
         align-items: center;
         margin: 1rem 0 1rem 1rem;
+
+        @include tablette-only {
+            width: 100%;
+            gap: 5rem;
+        }
     }
 
     &__explain {
@@ -69,34 +100,45 @@ main {
         align-items: center;
         gap: 1rem;
         margin: 1rem 0 1rem 0;
+        padding: 1rem;
         @include initial-shadow-element;
         font-weight: 700;
         cursor: pointer;
+
+        @include tablette-only {
+            background-color: azure;
+        }
     }
 
     &__explain:hover {
-        background-color: rgba(7, 15, 56, 0.03);
+        background-color: hsl(267, 66%, 94%);
     }
 
-    &__explain .number {
+    &__number {
         display: inline-block;
         position: relative;
-        right: 0.8rem;
+        right: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 1.5rem;
         height: 1.5rem;
+        padding: 1rem;
         background-color: $colour-primary;
         border-radius: 50%;
         text-align: center;
         font-weight: 700;
         color: $colour-text;
+
+        @include tablette-only {
+            width: 1rem;
+            height: 1rem;
+        }
     }
 
     &__explain .fa-solid {
         position: relative;
-        right: 0.5rem;
+        right: 1.5rem;
         opacity: (0.5);
     }
 
@@ -114,12 +156,22 @@ main {
     height: auto;
     gap: 1rem;
     background-color: rgba(7, 15, 56, 0.03);
-    padding-bottom:4rem;
+    padding-bottom: 4rem;
+
+    @include tablette-only {
+        width: 65%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 
     &__heading {
         width: 100%;
         height: auto;
-        padding : 2rem 1rem 0 1rem;
+        padding: 3rem 1rem 0 1rem;
+
+        @include tablette-only {
+            margin-left: 4rem;
+        }
     }
 }
 
@@ -132,10 +184,23 @@ main {
     transform: scale(1);
     transition: all 300ms;
     transition: transform 100ms ease-in-out;
-   
+    -webkit-transition: transform 100ms ease-in-out;
+    -moz-transition: transform 100ms ease-in-out;
+    -ms-transition: transform 100ms ease-in-out;
+    -o-transition: transform 100ms ease-in-out;
+
+    @include tablette-only {
+
+        align-items: flex-end;
+        width: 40%;
+    }
 
     &:hover {
         transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
         @include initial-shadow-element;
     }
 
@@ -174,37 +239,33 @@ main {
         height: 3.75rem;
         border-radius: 0 0 20px 20px;
     }
-    &__footer h3, p {
-padding : 0.2rem 0 0.2rem 1rem;}
 
-    &__icon-heart--before {
-        width: auto;
-        display: inline-block;
+    &__footer h3,
+    p {
+        padding: 0.2rem 0 0.2rem 1rem;
+    }
+
+    &__icon-heart {
+       
+       
         position: absolute;
-        z-index: 1;
         top: 13rem;
         right: 2rem;
         border: none;
+         
     }
 
-    &__icon-heart--after {
-        width: auto;
-        color: transparent;
-        display: inline-block;
-        position: absolute;
-        z-index: auto;
-        top: 13rem;
-        right: 2rem;
-        border: none;
-    }
+   
+ 
+    &__icon-heart:hover .fa-regular{
 
-    &__icon-heart--before:hover {
-        display: none;
-    }
-
-    &__icon-heart--after:hover {
-        color: $colour-primary;
-        z-index: 2;
-        cursor:grab;
-    }
+ 
+  background-color:  #9356DC;
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+    
+}
+   
+ 
+      
 }

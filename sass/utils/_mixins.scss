@@ -1,3 +1,13 @@
-@mixin initial-shadow-element ($size: $shadow-size, $blur-effect: $shadow-blur-effect, $colour: $colour-shadow ){
-box-shadow: $size $blur-effect $colour;
+@mixin initial-shadow-element ($size: $shadow-size, $blur-effect: $shadow-blur-effect, $colour: $colour-shadow ) {
+    box-shadow: $size $blur-effect $colour;
+}
+
+$breakpoints-tablette: (
+    tablette: 767px
+);
+
+@mixin tablette-only {
+    @media  all and (min-width: map-get($breakpoints-tablette, tablette)) {
+        @content;
+    }
 }
