@@ -1,0 +1,86 @@
+.restaurant-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.29rem;
+    bottom: 1.1rem;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: grab;
+
+
+    &__after {
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        right: 1.31rem;
+        bottom: 1rem;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: transform 400ms ease-in-out;
+        -webkit-transition: transform 400ms ease-in-out;
+        -moz-transition: transform 400ms ease-in-out;
+        -ms-transition: transform 400ms ease-in-out;
+        -o-transition: transform 400ms ease-in-out;
+}
+
+    &__after-part-right {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 3;
+        border-radius: 50% 0 0 50%;
+        rotate: 45deg;
+        background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
+        -webkit-border-radius: 50% 0 0 50%;
+        -moz-border-radius: 50% 0 0 50%;
+        -ms-border-radius: 50% 0 0 50%;
+        -o-border-radius: 50% 0 0 50%;
+    }
+
+    /*carré milieu*/
+    &__after-part-middle {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        z-index: 3;
+        rotate: 45deg;
+        background: linear-gradient(to right bottom, rgba(147, 86, 220, 1), 40%, #FF79DA);
+    }
+
+    &__after-part-left {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        z-index: 2;
+        border-radius: 50% 50% 0 0;
+        rotate: 45deg;
+        background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
+    }
+
+    &:hover+&__after {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+    }
+
+}

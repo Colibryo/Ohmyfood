@@ -6,8 +6,9 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/button";
-@import "./components/btn";
+@import "./components/button-action";
+@import "./components/button-like";
+@import "./components/btn-new";
 @import "./components/loader";
 
 @import "./layout/header";

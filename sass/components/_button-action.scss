@@ -1,4 +1,4 @@
-.button {
+.button-action {
     display: inline-block;
     width: 70%;
     text-align: center;
@@ -37,7 +37,6 @@
         background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
         filter: brightness(1.2);
         -webkit-filter: brightness(1.2);
-     
 }
 
 }

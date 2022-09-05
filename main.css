@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -75,7 +76,7 @@ h2 {
   }
 }
 
-.button {
+.button-action {
   display: inline-block;
   width: 70%;
   text-align: center;
@@ -106,15 +107,95 @@ h2 {
   -o-transition: transform 300ms ease-in-out;
 }
 @media all and (min-width: 767px) {
-  .button {
+  .button-action {
     width: 30%;
   }
 }
-.button:hover {
+.button-action:hover {
   transform: scale(1.2, 1.1);
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   filter: brightness(1.2);
   -webkit-filter: brightness(1.2);
+}
+
+.restaurant-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.29rem;
+  bottom: 1.1rem;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: grab;
+  /*carré milieu*/
+}
+.restaurant-like__after {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 1.31rem;
+  bottom: 1rem;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: transform 400ms ease-in-out;
+  -webkit-transition: transform 400ms ease-in-out;
+  -moz-transition: transform 400ms ease-in-out;
+  -ms-transition: transform 400ms ease-in-out;
+  -o-transition: transform 400ms ease-in-out;
+}
+.restaurant-like__after-part-right {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 3;
+  border-radius: 50% 0 0 50%;
+  rotate: 45deg;
+  background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
+  -webkit-border-radius: 50% 0 0 50%;
+  -moz-border-radius: 50% 0 0 50%;
+  -ms-border-radius: 50% 0 0 50%;
+  -o-border-radius: 50% 0 0 50%;
+}
+.restaurant-like__after-part-middle {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 3;
+  rotate: 45deg;
+  background: linear-gradient(to right bottom, rgb(147, 86, 220), 40%, #FF79DA);
+}
+.restaurant-like__after-part-left {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+  border-radius: 50% 50% 0 0;
+  rotate: 45deg;
+  background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
+}
+.restaurant-like:hover + .restaurant-like__after {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
 }
 
 .btn {
@@ -398,6 +479,7 @@ main {
   -moz-transition: transform 100ms ease-in-out;
   -ms-transition: transform 100ms ease-in-out;
   -o-transition: transform 100ms ease-in-out;
+  background-color: white;
 }
 @media all and (min-width: 767px) {
   .restaurant {
@@ -424,31 +506,47 @@ main {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   box-shadow: 0.125rem 0.125rem 0.5rem #f1eaea;
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -webkit-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -moz-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -ms-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -o-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
 .restaurant__container-img {
-  border-radius: 20px 20px 0 0;
   width: 100%;
   height: 200px;
   overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
 }
 .restaurant__img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
 }
 .restaurant__footer {
   width: 100%;
   height: 3.75rem;
   border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
 }
 .restaurant__footer h3,
 .restaurant p {
   padding: 0.2rem 0 0.2rem 1rem;
 }
-.restaurant__icon-heart {
+.restaurant__like-before {
   position: absolute;
   top: 13rem;
   right: 2rem;

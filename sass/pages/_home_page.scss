@@ -188,9 +188,9 @@ main {
     -moz-transition: transform 100ms ease-in-out;
     -ms-transition: transform 100ms ease-in-out;
     -o-transition: transform 100ms ease-in-out;
+    background-color: white;
 
     @include tablette-only {
-
         align-items: flex-end;
         width: 40%;
     }
@@ -216,36 +216,52 @@ main {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        border-radius: $border-card;
         @include initial-shadow-element;
-    }
+        border-radius: $border-card;
+        -webkit-border-radius: $border-card;
+        -moz-border-radius: $border-card;
+        -ms-border-radius: $border-card;
+        -o-border-radius: $border-card;
+}
 
     &__container-img {
-        border-radius: 20px 20px 0 0;
         width: 100%;
         height: 200px;
         overflow: hidden;
-    }
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+}
 
     &__img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         border-radius: 20px 20px 0 0;
-    }
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+}
 
     &__footer {
         width: 100%;
         height: 3.75rem;
         border-radius: 0 0 20px 20px;
-    }
+        -webkit-border-radius: 0 0 20px 20px;
+        -moz-border-radius: 0 0 20px 20px;
+        -ms-border-radius: 0 0 20px 20px;
+        -o-border-radius: 0 0 20px 20px;
+}
 
     &__footer h3,
     p {
         padding: 0.2rem 0 0.2rem 1rem;
     }
 
-    &__icon-heart {
+    &__like-before {
        
        
         position: absolute;
