@@ -7,6 +7,11 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
+    @include desktop-only {
+        flex-direction: column;
+    }
+
 }
 
 .presentation {
@@ -67,6 +72,12 @@ main {
         background-color: $colour-secondary;
     }
 
+    @include desktop-only {
+        width: 100%;
+        flex-direction: row;
+         align-items: center;
+    }
+
     &__heading {
         padding: 0 1rem 0 1rem;
 
@@ -76,6 +87,7 @@ main {
             margin: 2rem;
             padding: 0;
         }
+
     }
 
     &__container {
@@ -88,6 +100,11 @@ main {
         @include tablette-only {
             width: 100%;
             gap: 5rem;
+        }  
+        
+        @include desktop-only {
+            flex-direction: row;
+             align-items: center;
         }
     }
 
@@ -164,6 +181,12 @@ main {
         flex-direction: row;
     }
 
+    @include desktop-only {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     &__heading {
         width: 100%;
         height: auto;
@@ -171,6 +194,11 @@ main {
 
         @include tablette-only {
             margin-left: 4rem;
+        }
+
+        @include desktop-only {
+            padding: 3rem 1rem 3rem 1rem;  
+            margin-left: 2rem;
         }
     }
 }
@@ -193,6 +221,11 @@ main {
     @include tablette-only {
         align-items: flex-end;
         width: 40%;
+    }
+
+    @include desktop-only {
+        width: 40%;
+        height:350px;
     }
 
     &:hover {
@@ -222,6 +255,11 @@ main {
         -moz-border-radius: $border-card;
         -ms-border-radius: $border-card;
         -o-border-radius: $border-card;
+
+        @include desktop-only {
+       
+            height:350px;
+        }
 }
 
     &__container-img {
@@ -233,7 +271,12 @@ main {
         -moz-border-radius: 20px 20px 0 0;
         -ms-border-radius: 20px 20px 0 0;
         -o-border-radius: 20px 20px 0 0;
-}
+
+        @include desktop-only {
+          
+            height:300px;
+        }
+    }
 
     &__img {
         object-fit: cover;
@@ -262,26 +305,16 @@ main {
     }
 
     &__like-before {
-       
-       
         position: absolute;
         top: 13rem;
         right: 2rem;
         border: none;
-         
     }
 
-   
- 
     &__icon-heart:hover .fa-regular{
-
- 
   background-color:  #9356DC;
     filter: brightness(1.5);
     -webkit-filter: brightness(1.5);
-    
 }
    
- 
-      
 }

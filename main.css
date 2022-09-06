@@ -44,11 +44,6 @@ td, th {
   padding: 0;
 }
 
-body {
-  width: auto;
-  height: auto;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -303,6 +298,11 @@ main {
     flex-direction: row;
   }
 }
+@media all and (min-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+}
 
 .presentation {
   display: flex;
@@ -361,6 +361,13 @@ main {
     background-color: #FF79DA;
   }
 }
+@media all and (min-width: 992px) {
+  .functioning {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .functioning__heading {
   padding: 0 1rem 0 1rem;
 }
@@ -382,6 +389,12 @@ main {
   .functioning__container {
     width: 100%;
     gap: 5rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .functioning__container {
+    flex-direction: row;
+    align-items: center;
   }
 }
 .functioning__explain {
@@ -455,6 +468,13 @@ main {
     flex-direction: row;
   }
 }
+@media all and (min-width: 992px) {
+  .container-restaurant {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 .container-restaurant__heading {
   width: 100%;
   height: auto;
@@ -463,6 +483,12 @@ main {
 @media all and (min-width: 767px) {
   .container-restaurant__heading {
     margin-left: 4rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .container-restaurant__heading {
+    padding: 3rem 1rem 3rem 1rem;
+    margin-left: 2rem;
   }
 }
 
@@ -485,6 +511,12 @@ main {
   .restaurant {
     align-items: flex-end;
     width: 40%;
+  }
+}
+@media all and (min-width: 992px) {
+  .restaurant {
+    width: 40%;
+    height: 350px;
   }
 }
 .restaurant:hover {
@@ -513,6 +545,11 @@ main {
   -ms-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   -o-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
+@media all and (min-width: 992px) {
+  .restaurant__card {
+    height: 350px;
+  }
+}
 .restaurant__container-img {
   width: 100%;
   height: 200px;
@@ -522,6 +559,11 @@ main {
   -moz-border-radius: 20px 20px 0 0;
   -ms-border-radius: 20px 20px 0 0;
   -o-border-radius: 20px 20px 0 0;
+}
+@media all and (min-width: 992px) {
+  .restaurant__container-img {
+    height: 300px;
+  }
 }
 .restaurant__img {
   object-fit: cover;

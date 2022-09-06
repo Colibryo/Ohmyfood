@@ -11,3 +11,13 @@ $breakpoints-tablette: (
         @content;
     }
 }
+
+$breakpoints-desktop: (
+    desktop: 992px
+);
+
+@mixin desktop-only {
+    @media  all and (min-width: map-get($breakpoints-desktop, desktop)) {
+        @content;
+    }
+}
