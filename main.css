@@ -287,19 +287,19 @@ h2 {
   }
 }
 
-main {
+.home-main-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media all and (min-width: 767px) {
-  main {
+  .home-main-container {
     flex-wrap: wrap;
     flex-direction: row;
   }
 }
 @media all and (min-width: 992px) {
-  main {
+  .home-main-container {
     flex-direction: column;
   }
 }
@@ -598,6 +598,18 @@ main {
   background-color: #9356DC;
   filter: brightness(1.5);
   -webkit-filter: brightness(1.5);
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu__return {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+.header-menu__logo {
+  text-align: center;
 }
 
 footer {
