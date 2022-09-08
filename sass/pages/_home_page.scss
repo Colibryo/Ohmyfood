@@ -22,7 +22,7 @@
     text-align: center;
     align-items: center;
     margin-bottom: 5rem;
-    background-color: rgba(7, 15, 56, 0.03);
+    background-color: rgb(252, 246, 246);
 
     @include tablette-only {
         margin-bottom: 1rem;
@@ -38,7 +38,6 @@
         margin: 0 0 1rem 0;
         padding: 1rem;
         font-weight: 700;
-        background-color: rgb(252, 246, 246);
         box-shadow: inset 0 0.2rem 0.2rem rgba(7, 15, 56, 0.07);
         background-color: rgba(7, 15, 56, 0.03);
     }
@@ -82,7 +81,6 @@
 
         @include tablette-only {
             width: 100%;
-
             margin: 2rem;
             padding: 0;
         }
@@ -171,7 +169,7 @@
     width: auto;
     height: auto;
     gap: 1rem;
-    background-color: rgba(7, 15, 56, 0.03);
+    background-color: rgb(252, 246, 246);
     padding-bottom: 4rem;
 
     @include tablette-only {
@@ -290,7 +288,8 @@
 
     &__footer {
         width: 100%;
-        height: 3.75rem;
+        height: auto;
+        padding: 0.5rem;
         border-radius: 0 0 20px 20px;
         -webkit-border-radius: 0 0 20px 20px;
         -moz-border-radius: 0 0 20px 20px;
@@ -303,17 +302,25 @@
         padding: 0.2rem 0 0.2rem 1rem;
     }
 
-    &__like-before {
-        position: absolute;
-        top: 13rem;
-        right: 2rem;
-        border: none;
-    }
-
     &__icon-heart:hover .fa-regular{
   background-color:  #9356DC;
     filter: brightness(1.5);
     -webkit-filter: brightness(1.5);
 }
    
+}
+
+.restaurant-like {
+    
+    position: absolute;
+    right: 2rem;
+    bottom: 1.1rem;
+    
+    &__after {
+        position: fixed;
+        right: 2rem;
+        bottom: 1rem;
+        
+}
+
 }

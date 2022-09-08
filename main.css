@@ -56,6 +56,11 @@ h2 {
 
 body {
   font-family: "Roboto", sans-serif;
+  line-height: 130%;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h3 {
@@ -69,6 +74,21 @@ h2 {
   h2 {
     font-size: 1.2rem;
   }
+}
+
+.logo {
+  font-family: "Shrikhand", "Robot", sans-serif;
+  font-size: 2rem;
+}
+
+.card-container__heading h1 {
+  font-family: "Shrikhand", "Robot", sans-serif;
+  font-size: 1.8rem;
+}
+
+.menu__heading {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .button-action {
@@ -88,7 +108,7 @@ h2 {
   -o-border-radius: 45px 45px;
   border: none;
   background: linear-gradient(175deg, #FF79DA, #9356DC 95%);
-  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 198, 198);
+  box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -123,9 +143,6 @@ h2 {
   width: 2rem;
   height: 2rem;
   font-size: 1.5rem;
-  position: absolute;
-  right: 1.29rem;
-  bottom: 1.1rem;
   border: none;
   background-color: white;
   border-radius: 50%;
@@ -140,9 +157,6 @@ h2 {
   border: none;
   width: 2rem;
   height: 2rem;
-  position: fixed;
-  right: 1.31rem;
-  bottom: 1rem;
   transform: scale(0);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -271,7 +285,7 @@ h2 {
 @keyframes opacity {
   0% {
     opacity: 1;
-    z-index: 1;
+    z-index: 4;
   }
   100% {
     opacity: 0;
@@ -279,10 +293,9 @@ h2 {
   }
 }
 .logo {
-  font-size: 2rem;
   text-align: center;
-  font-family: "Shrikhand", "Robot", sans-serif;
   margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 @media all and (min-width: 767px) {
   .logo {
@@ -315,7 +328,7 @@ h2 {
   text-align: center;
   align-items: center;
   margin-bottom: 5rem;
-  background-color: rgba(7, 15, 56, 0.03);
+  background-color: rgb(252, 246, 246);
 }
 @media all and (min-width: 767px) {
   .presentation {
@@ -332,7 +345,6 @@ h2 {
   margin: 0 0 1rem 0;
   padding: 1rem;
   font-weight: 700;
-  background-color: rgb(252, 246, 246);
   box-shadow: inset 0 0.2rem 0.2rem rgba(7, 15, 56, 0.07);
   background-color: rgba(7, 15, 56, 0.03);
 }
@@ -409,7 +421,7 @@ h2 {
   gap: 1rem;
   margin: 1rem 0 1rem 0;
   padding: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 198, 198);
+  box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
   font-weight: 700;
   cursor: pointer;
 }
@@ -460,7 +472,7 @@ h2 {
   width: auto;
   height: auto;
   gap: 1rem;
-  background-color: rgba(7, 15, 56, 0.03);
+  background-color: rgb(252, 246, 246);
   padding-bottom: 4rem;
 }
 @media all and (min-width: 767px) {
@@ -527,7 +539,7 @@ h2 {
   -moz-transform: scale(1.02);
   -ms-transform: scale(1.02);
   -o-transform: scale(1.02);
-  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 198, 198);
+  box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
 }
 .restaurant__link {
   display: inline-block;
@@ -540,7 +552,7 @@ h2 {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  box-shadow: 0.5rem 0.5rem 1rem rgb(202, 198, 198);
+  box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   -webkit-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   -moz-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
@@ -579,7 +591,8 @@ h2 {
 }
 .restaurant__footer {
   width: 100%;
-  height: 3.75rem;
+  height: auto;
+  padding: 0.5rem;
   border-radius: 0 0 20px 20px;
   -webkit-border-radius: 0 0 20px 20px;
   -moz-border-radius: 0 0 20px 20px;
@@ -590,16 +603,21 @@ h2 {
 .restaurant p {
   padding: 0.2rem 0 0.2rem 1rem;
 }
-.restaurant__like-before {
-  position: absolute;
-  top: 13rem;
-  right: 2rem;
-  border: none;
-}
 .restaurant__icon-heart:hover .fa-regular {
   background-color: #9356DC;
   filter: brightness(1.5);
   -webkit-filter: brightness(1.5);
+}
+
+.restaurant-like {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.1rem;
+}
+.restaurant-like__after {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
 }
 
 .header-menu {
@@ -610,8 +628,95 @@ h2 {
   margin: 2rem;
   font-size: 1.5rem;
 }
-.header-menu__logo {
-  text-align: center;
+
+.main-container {
+  width: 100%;
+  height: auto;
+}
+.main-container__img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+
+.card-container {
+  position: relative;
+  top: 14rem;
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  background-color: rgb(252, 246, 246);
+  border-radius: 25px 25px 0 0;
+  -webkit-border-radius: 25px 25px 0 0;
+  -moz-border-radius: 25px 25px 0 0;
+  -ms-border-radius: 25px 25px 0 0;
+  -o-border-radius: 25px 25px 0 0;
+}
+.card-container__heading {
+  line-height: 3rem;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.card-container__heading .restaurant-like {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgb(252, 246, 246);
+}
+.card-container__heading .restaurant-like__after {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.5rem;
+  background-color: rgb(252, 246, 246);
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu__heading {
+  margin: 1rem 1rem 1rem 1rem;
+}
+.menu__container {
+  width: 100%;
+  height: auto;
+  margin: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu__selection {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
+  border: solid 1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
+.menu__check {
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.menu__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
