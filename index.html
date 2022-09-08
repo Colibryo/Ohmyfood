@@ -25,8 +25,8 @@
         <div class="loader__heading">food<span> .</span><span> .</span><span> .</span></div>
     </div>
 
-    <header class="logo">
-        <h1>ohmyfood</h1>
+    <header>
+        <div class="logo">ohmyfood</div>
     </header>
 
     <main class="home-main-container">
@@ -34,19 +34,19 @@
             <div class="presentation__location"><i class="fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
             </div>
-            <h2 class="presentation__heading">Réservez le menu qui vous convient</h2>
+            <h1 class="presentation__heading">Réservez le menu qui vous convient</h1>
             <p class="presentation__discover">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
- 
-                <button class="button-action">
-                    Explorez nos restaurants
-                </button>
-             
+
+            <button class="button-action">
+                Explorez nos restaurants
+            </button>
+
         </section>
 
         <section class="functioning">
             <h2 class="functioning__heading">Fonctionnement</h2>
             <div class="functioning__container">
-                
+
                 <p class="functioning__explain"><span class="functioning__number">1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>Choissez un restaurant
                 </p>
@@ -69,107 +69,109 @@
 
             <h2 class="container-restaurant__heading">Restaurants</h2>
 
-            <!--carte 1-->
-            <div class="restaurant">
-                <a class="restaurant__link" href="menu_the_palette_of_taste.html" title="restaurant gastronomique">
-                    <div class="restaurant__card">
-                        <div class="restaurant__container-img">
-                            <img class="restaurant__img" src="assets/img//La_palette_du_goût.jpg"
-                                alt="restaurant la palette du goût">
-                        </div>
-                        <div class="restaurant__footer">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
+            <div class="container-restaurant__cards">
+                      <!--carte 1-->
+                <div class="restaurant">
+                    <a class="restaurant__link" href="menu_the_palette_of_taste.html" title="restaurant gastronomique">
+                        <div class="restaurant__card">
+                            <div class="restaurant__container-img">
+                                <img class="restaurant__img" src="assets/img//La_palette_du_goût.jpg"
+                                    alt="restaurant la palette du goût">
+                            </div>
+                            <div class="restaurant__footer">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
 
-                        <div class="btn">
-                            <button class="btn__new">Nouveau</button>
+                            <div class="btn">
+                                <button class="btn__new">Nouveau</button>
+                            </div>
                         </div>
+                    </a>
+                    <!--coeur*2-->
+                    <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>
+                    <div class="restaurant-like__after">
+                        <div class="restaurant-like__after-part-right"></div>
+                        <div class="restaurant-like__after-part-middle"></div>
+                        <div class="restaurant-like__after-part-left"></div>
                     </div>
-                </a>
-                <!--coeur*2-->
-                <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>                   
-                <div class="restaurant-like__after">
-                    <div class="restaurant-like__after-part-right"></div>
-                    <div class="restaurant-like__after-part-middle"></div>
-                    <div class="restaurant-like__after-part-left"></div>
                 </div>
-                
+
+                <!--carte 2-->
+                <div class="restaurant">
+                    <a class="restaurant__link" href="menu_the_enchanted_note.html" title="restaurant gastronomique">
+
+                        <div class="restaurant__card">
+                            <div class="restaurant__container-img">
+                                <img class="restaurant__img" src="assets/img//La_note_enchantée.jpg"
+                                    alt="restaurant la note enchantée">
+                            </div>
+                            <div class="restaurant__footer">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="btn">
+                                <button class="btn__new">Nouveau</button>
+                            </div>
+                        </div>
+                    </a>
+                    <!--coeur*2-->
+                    <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>
+                    <div class="restaurant-like__after">
+                        <div class="restaurant-like__after-part-right"></div>
+                        <div class="restaurant-like__after-part-middle"></div>
+                        <div class="restaurant-like__after-part-left"></div>
+                    </div>
+                </div>
+
+                <!--carte 3-->
+                <div class="restaurant">
+                    <a class="restaurant__link" href="menu_french_style.html" title="restaurant gastronomique">
+                        <div class="restaurant__card">
+                            <div class="restaurant__container-img">
+                                <img class="restaurant__img" src="assets/img/A_la_Française.jpg"
+                                    alt="restaurant à la Française">
+                            </div>
+                            <div class="restaurant__footer">
+                                <h3>À la Française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--coeur*2-->
+                    <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>
+                    <div class="restaurant-like__after">
+                        <div class="restaurant-like__after-part-right"></div>
+                        <div class="restaurant-like__after-part-middle"></div>
+                        <div class="restaurant-like__after-part-left"></div>
+                    </div>
+                </div>
+
+                <!--carte 4-->
+                <div class="restaurant">
+                    <a class="restaurant__link" href="menu_the_delite_of_the_senses.html"
+                        title="restaurant gastronomique">
+                        <div class="restaurant__card">
+                            <div class="restaurant__container-img">
+                                <img class="restaurant__img" src="assets/img/le_délice_des_sens.jpg"
+                                    alt="restaurant le délice des sens">
+                            </div>
+                            <div class="restaurant__footer">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--coeur*2 pour switch-->
+                    <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>
+                    <div class="restaurant-like__after">
+                        <div class="restaurant-like__after-part-right"></div>
+                        <div class="restaurant-like__after-part-middle"></div>
+                        <div class="restaurant-like__after-part-left"></div>
+                    </div>
+                </div>
             </div>
 
-            <!--carte 2-->
-            <div class="restaurant">
-                <a class="restaurant__link" href="menu_the_enchanted_note.html" title="restaurant gastronomique">
-
-                    <div class="restaurant__card">
-                        <div class="restaurant__container-img">
-                            <img class="restaurant__img" src="assets/img//La_note_enchantée.jpg"
-                                alt="restaurant la note enchantée">
-                        </div>
-                        <div class="restaurant__footer">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="btn">
-                            <button class="btn__new">Nouveau</button>
-                        </div>
-                    </div>
-                </a>
-                <!--coeur*2-->
-                <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>                   
-                <div class="restaurant-like__after">
-                    <div class="restaurant-like__after-part-right"></div>
-                    <div class="restaurant-like__after-part-middle"></div>
-                    <div class="restaurant-like__after-part-left"></div>
-                </div>
-            </div>
-
-            <!--carte 3-->
-            <div class="restaurant">
-                <a class="restaurant__link" href="menu_french_style.html" title="restaurant gastronomique">
-                    <div class="restaurant__card">
-                        <div class="restaurant__container-img">
-                            <img class="restaurant__img" src="assets/img/A_la_Française.jpg"
-                                alt="restaurant à la Française">
-                        </div>
-                        <div class="restaurant__footer">
-                            <h3>À la Française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
-                    </div>
-                </a>
-                <!--coeur*2-->
-                <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>                   
-                <div class="restaurant-like__after">
-                    <div class="restaurant-like__after-part-right"></div>
-                    <div class="restaurant-like__after-part-middle"></div>
-                    <div class="restaurant-like__after-part-left"></div>
-                </div>
-            </div>
-
-            <!--carte 4-->
-            <div class="restaurant">
-                <a class="restaurant__link" href="menu_the_delite_of_the_senses.html" title="restaurant gastronomique">
-                    <div class="restaurant__card">
-                        <div class="restaurant__container-img">
-                            <img class="restaurant__img" src="assets/img/le_délice_des_sens.jpg"
-                                alt="restaurant le délice des sens">
-                        </div>
-                        <div class="restaurant__footer">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                    </div>
-                </a>
-                <!--coeur*2 pour switch-->
-                <button class="restaurant-like"><i class="fa-regular fa-heart"></i></button>                   
-                <div class="restaurant-like__after">
-                    <div class="restaurant-like__after-part-right"></div>
-                    <div class="restaurant-like__after-part-middle"></div>
-                    <div class="restaurant-like__after-part-left"></div>
-                </div>
-            </div>
- 
         </section>
 
     </main>
@@ -178,13 +180,15 @@
         <nav class="nav">
             <h2 class="nav__logo">ohmyfood</h2>
             <ul class="nav__container">
-                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i class="fa-solid fa-utensils"></i>Proposer un
+                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
+                            class="fa-solid fa-utensils"></i>Proposer un
                         restaurant</a></li>
                 <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
                             class="fa-solid fa-handshake-angle fa-sm"></i>Devenir
                         partenaire</a></li>
                 <li><a class="nav__link nav__link--color" href="#" title="click here">Mentions légales</a></li>
-                <li><a class="nav__link nav__link--color" href="mailto:example@example.com" title="click here">Contact</a></li>
+                <li><a class="nav__link nav__link--color" href="mailto:example@example.com"
+                        title="click here">Contact</a></li>
             </ul>
         </nav>
     </footer>

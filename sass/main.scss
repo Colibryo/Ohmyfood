@@ -6,14 +6,14 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/button-action";
-@import "./components/button-like";
-@import "./components/btn-new";
+@import "./components/button_action";
+@import "./components/button_like";
+@import "./components/btn_new";
 @import "./components/loader";
 
 @import "./layout/header";
 @import "./layout/container";
+@import "./layout/nav";
 
 @import "./pages/home_page";
 @import "./pages/menu";
-@import "./layout/nav";

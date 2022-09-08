@@ -22,7 +22,7 @@
     text-align: center;
     align-items: center;
     margin-bottom: 5rem;
-    background-color: rgb(252, 246, 246);
+    background-color: $background-container;
 
     @include tablette-only {
         margin-bottom: 1rem;
@@ -39,7 +39,7 @@
         padding: 1rem;
         font-weight: 700;
         box-shadow: inset 0 0.2rem 0.2rem rgba(7, 15, 56, 0.07);
-        background-color: rgba(7, 15, 56, 0.03);
+        background-color: darken($background-container, 2%);
     }
 
     &__heading {
@@ -73,7 +73,7 @@
     @include desktop-only {
         width: 100%;
         flex-direction: row;
-         align-items: center;
+        align-items: center;
     }
 
     &__heading {
@@ -97,11 +97,11 @@
         @include tablette-only {
             width: 100%;
             gap: 5rem;
-        }  
-        
+        }
+
         @include desktop-only {
             flex-direction: row;
-             align-items: center;
+            align-items: center;
         }
     }
 
@@ -169,32 +169,49 @@
     width: auto;
     height: auto;
     gap: 1rem;
-    background-color: rgb(252, 246, 246);
+    background-color: $background-container;
     padding-bottom: 4rem;
 
     @include tablette-only {
+     flex-wrap: wrap;
+     justify-content: flex-start;
+        align-items: flex-start;
         width: 65%;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
 
     @include desktop-only {
         width: 100%;
-        flex-wrap: wrap;
         flex-direction: row;
     }
 
-    &__heading {
-        width: 100%;
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
         height: auto;
-        padding: 3rem 1rem 0 1rem;
+
 
         @include tablette-only {
-            margin-left: 4rem;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            gap: 10px;       
+        }
+
+    }
+
+    &__heading {
+        width: auto;
+        height: auto;
+        padding: 3rem 1rem 0 1rem;
+        margin: $margin-elements;
+
+        @include tablette-only {
+            margin: 0 0 0 4rem;
         }
 
         @include desktop-only {
-            padding: 3rem 1rem 3rem 1rem;  
+            padding: 3rem 1rem 3rem 1rem;
             margin-left: 2rem;
         }
     }
@@ -222,7 +239,7 @@
 
     @include desktop-only {
         width: 40%;
-        height:350px;
+        height: 350px;
     }
 
     &:hover {
@@ -254,10 +271,12 @@
         -o-border-radius: $border-card;
 
         @include desktop-only {
-       
-            height:350px;
+   
+                margin: 0;
+        width: auto;
+            height: 350px;
         }
-}
+    }
 
     &__container-img {
         width: 100%;
@@ -270,8 +289,7 @@
         -o-border-radius: 20px 20px 0 0;
 
         @include desktop-only {
-          
-            height:300px;
+            height: 300px;
         }
     }
 
@@ -284,10 +302,10 @@
         -moz-border-radius: 20px 20px 0 0;
         -ms-border-radius: 20px 20px 0 0;
         -o-border-radius: 20px 20px 0 0;
-}
+    }
 
     &__footer {
-        width: 100%;
+        width: auto;
         height: auto;
         padding: 0.5rem;
         border-radius: 0 0 20px 20px;
@@ -295,32 +313,22 @@
         -moz-border-radius: 0 0 20px 20px;
         -ms-border-radius: 0 0 20px 20px;
         -o-border-radius: 0 0 20px 20px;
-}
 
-    &__footer h3,
-    p {
-        padding: 0.2rem 0 0.2rem 1rem;
     }
 
-    &__icon-heart:hover .fa-regular{
-  background-color:  #9356DC;
-    filter: brightness(1.5);
-    -webkit-filter: brightness(1.5);
-}
-   
 }
 
 .restaurant-like {
-    
+
     position: absolute;
     right: 2rem;
     bottom: 1.1rem;
-    
+
     &__after {
         position: fixed;
         right: 2rem;
         bottom: 1rem;
-        
-}
+
+    }
 
 }
