@@ -69,12 +69,12 @@
         background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
     }
 
-    &:active+&__after {
-        transform: scale(0.45);
-        -webkit-transform: scale(0.45);
-        -moz-transform: scale(0.45);
-        -ms-transform: scale(0.45);
-        -o-transform: scale(0.45);
-}
+    &:hover+&__after {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+    }
 
 }
