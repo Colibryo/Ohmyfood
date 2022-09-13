@@ -2,6 +2,18 @@
     box-shadow: $size $blur-effect $colour;
 }
 
+
+$breakpoints-small-mobile: (
+    mobile: 350px
+);
+
+@mixin small-mobile-only {
+    @media  all and (max-width: map-get($breakpoints-small-mobile, small-mobile)) {
+        @content;
+    }
+}
+
+
 $breakpoints-tablette: (
     tablette: 767px
 );
