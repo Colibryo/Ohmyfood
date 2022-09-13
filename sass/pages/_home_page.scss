@@ -66,7 +66,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0;
-        padding: 1rem;
+        padding: 1rem 1rem 5rem 1rem;
         background-color: $colour-secondary;
     }
 
@@ -173,8 +173,8 @@
     padding-bottom: 4rem;
 
     @include tablette-only {
-     flex-wrap: wrap;
-     justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         align-items: flex-start;
         width: 65%;
     }
@@ -191,11 +191,11 @@
         width: auto;
         height: auto;
 
-
         @include tablette-only {
             flex-direction: row;
-            flex-wrap: wrap; 
-            gap: 10px;       
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 3.875rem 0 3.875rem 0;
         }
 
     }
@@ -207,7 +207,7 @@
         margin: $margin-elements;
 
         @include tablette-only {
-            margin: 0 0 0 4rem;
+            margin: 0;
         }
 
         @include desktop-only {
@@ -234,12 +234,14 @@
 
     @include tablette-only {
         align-items: flex-end;
-        width: 40%;
+        width: 45%;
+        margin: 0.2rem;
     }
 
     @include desktop-only {
         width: 40%;
         height: 350px;
+        margin: 1rem;
     }
 
     &:hover {
@@ -271,10 +273,9 @@
         -o-border-radius: $border-card;
 
         @include desktop-only {
-   
-                margin: 0;
-        width: auto;
+            width: auto;
             height: 350px;
+            margin: 0;
         }
     }
 
@@ -313,13 +314,11 @@
         -moz-border-radius: 0 0 20px 20px;
         -ms-border-radius: 0 0 20px 20px;
         -o-border-radius: 0 0 20px 20px;
-
     }
 
 }
 
 .restaurant-like {
-
     position: absolute;
     right: 2rem;
     bottom: 1.1rem;
@@ -328,7 +327,6 @@
         position: fixed;
         right: 2rem;
         bottom: 1rem;
-
     }
 
 }
