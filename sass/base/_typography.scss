@@ -11,30 +11,24 @@ h2{
     font-size: 1.5rem;
     font-weight: 700;
 
-   
+    @include tablette-only {
+        font-size: 1.2rem;
+    }
 }
 
 h3 {
-    font-size:1.1rem;
     font-weight: 700;
 }
+
 
 .logo{
     font-family:'Shrikhand', 'Robot', sans-serif;
     font-size: 2rem;
-    
-    @include small-mobile-only {
-        font-size: 1.3rem;
-      }
 }
 
-.main-container__heading h1{
+.card-container__heading h1{
 font-family:'Shrikhand', 'Robot', sans-serif;
 font-size: 1.8rem;
-
-   @include small-mobile-only {
-        font-size: 1.3rem;
-      }
 }
 
 .menu__heading{

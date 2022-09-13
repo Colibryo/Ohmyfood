@@ -14,7 +14,7 @@
     -ms-border-radius: 45px 45px;
     -o-border-radius: 45px 45px;
     border: none;
-    background: linear-gradient(to bottom, $colour-secondary, $colour-primary 95% );
+    background: linear-gradient(175deg, $colour-secondary, $colour-primary 95% );
     @include initial-shadow-element;
     transform: scale(1);
     -webkit-transform: scale(1);
