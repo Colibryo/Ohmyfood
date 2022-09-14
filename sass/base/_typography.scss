@@ -17,6 +17,20 @@ h2 {
 h3 {
     font-size: 1.1rem;
     font-weight: 700;
+    
+    @include small-mobile-only {
+        font-size: 0.8rem;}
+}
+
+p {
+    @include small-mobile-only {
+        font-size: 0.8rem;}
+    
+}
+
+.menu__price {
+    @include small-mobile-only {
+        font-size: 0.8rem;}
 }
 
 .logo {
@@ -40,4 +54,10 @@ h3 {
 .menu__heading {
     font-size: 1.2rem;
     font-weight: 300;
+}
+
+footer{
+
+    @include small-mobile-only {
+        font-size: 0.8rem;}
 }

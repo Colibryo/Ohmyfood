@@ -67,12 +67,29 @@ h3 {
   font-size: 1.1rem;
   font-weight: 700;
 }
+@media all and (max-width: 350px) {
+  h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 350px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .menu__price {
+    font-size: 0.8rem;
+  }
+}
 
 .logo {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 2rem;
 }
-@media all and (max-width: ) {
+@media all and (max-width: 350px) {
   .logo {
     font-size: 1.3rem;
   }
@@ -82,7 +99,7 @@ h3 {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 1.8rem;
 }
-@media all and (max-width: ) {
+@media all and (max-width: 350px) {
   .main-container__heading h1 {
     font-size: 1.3rem;
   }
@@ -91,6 +108,12 @@ h3 {
 .menu__heading {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+@media all and (max-width: 350px) {
+  footer {
+    font-size: 0.8rem;
+  }
 }
 
 .button-action {
@@ -734,7 +757,7 @@ footer {
   -ms-border-radius: 25px 25px 0 0;
   -o-border-radius: 25px 25px 0 0;
 }
-@media all and (max-width: ) {
+@media all and (max-width: 350px) {
   .main-container {
     top: 12rem;
   }
@@ -809,7 +832,7 @@ footer {
   -o-transform: translate(-5rem);
 }
 .menu__selection:active .menu__container-selection {
-  padding-right: 10rem;
+  padding-right: 8rem;
 }
 .menu__selection:active .menu__check {
   transform: scaleX(1);
@@ -825,7 +848,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-right: 4rem;
+  padding-right: 0rem;
   border-radius: 0 10px 10px 0;
   -webkit-border-radius: 0 10px 10px 0;
   -moz-border-radius: 0 10px 10px 0;
@@ -865,6 +888,11 @@ footer {
   -moz-transition: transform 500ms ease-in-out;
   -ms-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
+}
+@media all and (max-width: 350px) {
+  .menu__price {
+    right: 1rem;
+  }
 }
 .menu__check {
   width: 5rem;

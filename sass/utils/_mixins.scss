@@ -7,7 +7,7 @@ $breakpoints-small-mobile: (
 );
 
 @mixin small-mobile-only {
-    @media all and (max-width: map-get($breakpoints-small-mobile, small-mobile)) {
+    @media all and (max-width: map-get($breakpoints-small-mobile, mobile)) {
         @content;
     }
 }
