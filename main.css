@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 @media all and (max-width: 350px) {
@@ -73,15 +73,22 @@ h3 {
   }
 }
 
+p {
+  font-size: 0.9rem;
+}
 @media all and (max-width: 350px) {
   p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
+.menu__price {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
 @media all and (max-width: 350px) {
   .menu__price {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -798,6 +805,11 @@ footer {
   flex-direction: column;
   margin: 1rem 1rem 1rem 1rem;
 }
+@media all and (max-width: 350px) {
+  .menu {
+    margin: 0.3rem;
+  }
+}
 .menu__title-container {
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -972,6 +984,11 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media all and (max-width: 350px) {
+  .menu__name {
+    padding-left: 0.5rem;
+  }
+}
 .menu__details {
   width: 100%;
   height: auto;
@@ -980,11 +997,16 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media all and (max-width: 350px) {
+  .menu__details {
+    padding-left: 0.5rem;
+  }
+}
 .menu__price {
   display: inline-block;
   position: absolute;
   right: 2rem;
-  bottom: 1rem;
+  bottom: 1.1rem;
   width: 1rem;
   height: 1rem;
   transition: transform 500ms ease-in-out;
