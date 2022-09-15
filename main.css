@@ -825,6 +825,109 @@ footer {
   cursor: pointer;
   overflow: hidden;
 }
+.menu__selection--first-apparition {
+  animation: first-apparition 1000ms 2900ms ease-in;
+  -webkit-animation: first-apparition 1000ms 2900ms ease-in;
+}
+@keyframes first-apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    -moz-transform: translate(0, 25px);
+    -ms-transform: translate(0, 25px);
+    -o-transform: translate(0, 25px);
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+.menu__selection--second-apparition {
+  transform-origin: bottom;
+  animation: second-apparition 1200ms 2950ms ease-in;
+  -webkit-animation: second-apparition 1200ms 2950ms ease-in;
+}
+@keyframes second-apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    -moz-transform: translate(0, 25px);
+    -ms-transform: translate(0, 25px);
+    -o-transform: translate(0, 25px);
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+.menu__selection--third-apparition {
+  transform-origin: bottom;
+  animation: third-apparition 1400ms 3000ms ease-in;
+  -webkit-animation: third-apparition 1400ms 3000ms ease-in;
+}
+@keyframes third-apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    -moz-transform: translate(0, 25px);
+    -ms-transform: translate(0, 25px);
+    -o-transform: translate(0, 25px);
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+.menu__selection--fourth-apparition {
+  transform-origin: bottom;
+  animation: fourth-apparition 1600ms 3010ms ease-in;
+  -webkit-animation: fourth-apparition 1600ms 3010ms ease-in;
+}
+@keyframes fourth-apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    -moz-transform: translate(0, 25px);
+    -ms-transform: translate(0, 25px);
+    -o-transform: translate(0, 25px);
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
 .menu__selection:active .menu__price {
   transform: translate(-5rem);
   -webkit-transform: translate(-5rem);
