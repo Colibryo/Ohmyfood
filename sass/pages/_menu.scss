@@ -29,7 +29,7 @@
   height: auto;
   padding-bottom: 13rem;
   margin-bottom: 3.75rem;
-  background-color: rgb(252, 246, 246);
+  background-color: $background-container;
   border-radius: 25px 25px 0 0;
   -webkit-border-radius: 25px 25px 0 0;
   -moz-border-radius: 25px 25px 0 0;
@@ -61,14 +61,14 @@
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    background-color: rgb(252, 246, 246);
+    background-color: $background-container;
   }
 
   &__heading .restaurant-like__after {
     position: absolute;
     top: 0.65rem;
     right: 0.5rem;
-    background-color: rgb(252, 246, 246);
+    background-color: $background-container;
   }
 }
 
