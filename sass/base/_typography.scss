@@ -15,24 +15,24 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     
+    @include small-mobile-only {
+        font-size: 0.9rem;}
+}
+
+p {
+    font-size: 1rem;
     @include small-mobile-only {
         font-size: 0.8rem;}
 }
 
-p {
-    font-size: 0.9rem;
-    @include small-mobile-only {
-        font-size: 0.75rem;}
-}
-
 .menu__price{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     @include small-mobile-only {
-        font-size: 0.7rem;}
+        font-size: 0.8rem;}
 }
 
 .logo {
