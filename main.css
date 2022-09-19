@@ -176,6 +176,7 @@ p {
   height: 2rem;
   font-size: 1.5rem;
   border: none;
+  color: black;
   background-color: white;
   border-radius: 50%;
   -webkit-border-radius: 50%;
