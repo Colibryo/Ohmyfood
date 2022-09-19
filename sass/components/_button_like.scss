@@ -1,4 +1,4 @@
-.restaurant-like {
+.like {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +14,8 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     cursor: grab;
-    
-            &__after 
+} 
+.like-after 
 {
         border: none;
         width: 2rem;
@@ -30,9 +30,9 @@
         -moz-transition: transform 400ms ease-in-out;
         -ms-transition: transform 400ms ease-in-out;
         -o-transition: transform 400ms ease-in-out;
-}
 
-    &__after-part-right {
+
+    &__part-right {
         width: 2rem;
         height: 2rem;
         position: absolute;
@@ -49,7 +49,7 @@
     }
 
     /*carré milieu*/
-    &__after-part-middle {
+    &__part-middle {
         width: 2rem;
         height: 2rem;
         position: absolute;
@@ -58,7 +58,7 @@
         background: linear-gradient(to right bottom, rgba(147, 86, 220, 1), 40%, #FF79DA);
     }
 
-    &__after-part-left {
+    &__part-left {
         width: 2rem;
         height: 2rem;
         position: absolute;
@@ -70,12 +70,13 @@
         background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
     }
 
-    &:active+&__after {
-        transform: scale(0.5);
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        -o-transform: scale(0.5);
-    }
 
+}
+
+.like:active+.like-after {
+    transform: scale(0.45);
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    -o-transform: scale(0.45);
 }

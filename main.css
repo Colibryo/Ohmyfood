@@ -168,7 +168,7 @@ p {
   background: linear-gradient(to bottom right, #ffa2e5 1%, #a978e3);
 }
 
-.restaurant-like {
+.like {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,9 +184,9 @@ p {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   cursor: grab;
-  /*carré milieu*/
 }
-.restaurant-like__after {
+
+.like-after {
   border: none;
   width: 2rem;
   height: 2rem;
@@ -200,8 +200,9 @@ p {
   -moz-transition: transform 400ms ease-in-out;
   -ms-transition: transform 400ms ease-in-out;
   -o-transition: transform 400ms ease-in-out;
+  /*carré milieu*/
 }
-.restaurant-like__after-part-right {
+.like-after__part-right {
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -216,7 +217,7 @@ p {
   -ms-border-radius: 50% 0 0 50%;
   -o-border-radius: 50% 0 0 50%;
 }
-.restaurant-like__after-part-middle {
+.like-after__part-middle {
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -224,7 +225,7 @@ p {
   rotate: 45deg;
   background: linear-gradient(to right bottom, rgb(147, 86, 220), 40%, #FF79DA);
 }
-.restaurant-like__after-part-left {
+.like-after__part-left {
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -235,12 +236,13 @@ p {
   rotate: 45deg;
   background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
 }
-.restaurant-like:active + .restaurant-like__after {
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
+
+.like:active + .like-after {
+  transform: scale(0.45);
+  -webkit-transform: scale(0.45);
+  -moz-transform: scale(0.45);
+  -ms-transform: scale(0.45);
+  -o-transform: scale(0.45);
 }
 
 .btn {
@@ -720,14 +722,15 @@ footer {
   -o-border-radius: 0 0 20px 20px;
 }
 
-.restaurant-like {
+.like--card-position {
   position: absolute;
   right: 2rem;
   bottom: 1.1rem;
 }
-.restaurant-like__after {
+
+.like-after--card-position {
   position: absolute;
-  right: 2rem;
+  right: 2.03rem;
   bottom: 1rem;
 }
 
@@ -787,13 +790,13 @@ footer {
   margin: 1rem 1rem 1rem 1rem;
   padding-right: 3rem;
 }
-.main-container__heading .restaurant-like {
+.main-container__heading .like--menu-position {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   background-color: #f2f2f2;
 }
-.main-container__heading .restaurant-like__after {
+.main-container__heading .like-after--menu-position {
   position: absolute;
   top: 0.65rem;
   right: 0.5rem;
