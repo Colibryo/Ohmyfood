@@ -1,13 +1,13 @@
 footer {
     width: auto;
-    height:auto;
+    height: auto;
     background-color: $colour-quartery;
     padding: 1rem 0 1rem 0;
 
     @include tablette-only {
         display: flex;
         justify-content: space-around;
-        height:auto;
+        height: auto;
     }
 }
 
@@ -16,25 +16,26 @@ footer {
     margin: $margin-elements;
     line-height: 2rem;
 
-    &__container{
+    &__container {
 
-    @include tablette-only {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+        @include tablette-only {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
 
+        }
     }
-}
 
     &__logo {
         margin: 1rem 0 1rem 0;
         font-weight: 300;
         font-family: 'Shrikhand', 'Roboto', sans-serif;
+
         @include tablette-only {
             display: flex;
             justify-content: center;
-  align-items: center;
+            align-items: center;
         }
     }
 
@@ -45,7 +46,7 @@ footer {
         right: 0.5rem;
         line-height: 1rem;
         padding: 0 1rem 0 1rem;
-         
+
     }
 
     &__link-icon .fa-utensils {
@@ -63,7 +64,8 @@ footer {
 
         @include tablette-only {
             margin: $margin-elements;
-    }}
+        }
+    }
 
     &__link--color:hover {
         color: $colour-secondary;

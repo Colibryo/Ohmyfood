@@ -29,7 +29,11 @@
     -o-transition: transform 300ms ease-in-out;
 
     @include tablette-only {
-        width: 30%;
+        width: 15rem;
+    }
+
+    @include desktop-only {
+        width: 18rem;
     }
 
     &:hover {
