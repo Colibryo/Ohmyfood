@@ -877,18 +877,18 @@ footer {
   height: auto;
   position: relative;
   margin: 1rem 1rem 1rem 1rem;
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 .menu-main-container__heading .like--menu-position {
   position: absolute;
   top: 0.5rem;
-  right: 0.5rem;
+  right: 0rem;
   background-color: #f2f2f2;
 }
 .menu-main-container__heading .like-after--menu-position {
   position: absolute;
   top: 0.65rem;
-  right: 0.5rem;
+  right: 0.1rem;
   background-color: #f2f2f2;
 }
 
@@ -906,7 +906,10 @@ footer {
 }
 @media all and (min-width: 992px) {
   .menu {
+    position: relative;
+    top: 1rem;
     width: 100%;
+    padding: 1rem 0 1rem 10rem;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -917,12 +920,21 @@ footer {
 }
 @media all and (min-width: 992px) {
   .menu__title-container {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 4rem;
     width: 5%;
     margin: 2rem;
   }
 }
 .menu__heading {
   padding-bottom: 0.5rem;
+}
+@media all and (min-width: 992px) {
+  .menu__heading--larger {
+    position: absolute;
+    bottom: 6rem;
+  }
 }
 .menu__underline {
   width: 3rem;
@@ -947,8 +959,8 @@ footer {
 }
 @media all and (min-width: 992px) {
   .menu__selection {
-    width: 20%;
-    margin: 1rem;
+    width: 30%;
+    margin: 0.5rem;
   }
 }
 .menu__selection--first-apparition {

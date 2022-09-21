@@ -28,12 +28,11 @@
   position: absolute;
 
   @include desktop-only {
-  &__restaurant-img{
-
-    width: 100%;
-    height: 60rem;
+    &__restaurant-img {
+      width: 100%;
+      height: 60rem;
+    }
   }
-}
 
 }
 
@@ -45,20 +44,20 @@
     height: auto;
     position: relative;
     margin: $margin-elements;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
 
   &__heading .like--menu-position {
     position: absolute;
     top: 0.5rem;
-    right: 0.5rem;
+    right: 0rem;
     background-color: $background-container;
   }
 
   &__heading .like-after--menu-position {
     position: absolute;
     top: 0.65rem;
-    right: 0.5rem;
+    right: 0.1rem;
     background-color: $background-container;
   }
 }
@@ -75,23 +74,39 @@
   }
 
   @include desktop-only {
+    position: relative;
+    top: 1rem;
     width: 100%;
+    padding: 1rem 0 1rem 10rem;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
+
+  }
 
   &__title-container {
     margin: 1rem 0rem 1rem 0rem;
 
     @include desktop-only {
- width: 5%;
- margin: 2rem
-  }
+      position: absolute;
+      bottom: 5.5rem;
+      left: 4rem;
+
+      width: 5%;
+      margin: 2rem
+    }
   }
 
   &__heading {
     padding-bottom: 0.5rem;
+  }
+
+  &__heading--larger {
+    @include desktop-only {
+
+      position: absolute;
+      bottom: 6rem;
+    }
   }
 
   &__underline {
@@ -117,16 +132,15 @@
     overflow: hidden;
 
     @include desktop-only {
-      width: 20%;
-      margin:1rem;
-   
-  }
+      width: 30%;
+      margin: 0.5rem;
+    }
   }
 
   &__selection--first-apparition {
     animation: first-apparition 1000ms 2900ms ease-in;
     -webkit-animation: first-apparition 1000ms 2900ms ease-in;
-}
+  }
 
   @keyframes first-apparition {
     0% {
@@ -156,7 +170,7 @@
     transform-origin: bottom;
     animation: second-apparition 1200ms 2950ms ease-in;
     -webkit-animation: second-apparition 1200ms 2950ms ease-in;
-}
+  }
 
   @keyframes second-apparition {
     0% {
@@ -186,7 +200,7 @@
     transform-origin: bottom;
     animation: third-apparition 1400ms 3000ms ease-in;
     -webkit-animation: third-apparition 1400ms 3000ms ease-in;
-}
+  }
 
   @keyframes third-apparition {
     0% {
@@ -211,11 +225,13 @@
       -o-transform: translate(0, 0);
     }
   }
+
   &__selection--fourth-apparition {
     transform-origin: bottom;
     animation: fourth-apparition 1600ms 3010ms ease-in;
     -webkit-animation: fourth-apparition 1600ms 3010ms ease-in;
-}
+  }
+
   @keyframes fourth-apparition {
     0% {
       opacity: 0;
@@ -278,7 +294,7 @@
     -moz-transition: padding-right 500ms ease-in-out;
     -ms-transition: padding-right 500ms ease-in-out;
     -o-transition: padding-right 500ms ease-in-out;
-}
+  }
 
   &__name {
     width: 100%;
@@ -289,7 +305,7 @@
     text-overflow: ellipsis;
 
     @include small-mobile-only {
-    padding-left: 0.5rem;
+      padding-left: 0.5rem;
     }
   }
 
@@ -303,7 +319,7 @@
 
     @include small-mobile-only {
       padding-left: 0.5rem;
-      }
+    }
   }
 
   &__price {
