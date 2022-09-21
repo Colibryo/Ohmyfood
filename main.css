@@ -215,19 +215,27 @@ p {
   bottom: 1rem;
   z-index: 3;
   border-radius: 50% 0 0 50%;
-  rotate: 45deg;
-  background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
   -webkit-border-radius: 50% 0 0 50%;
   -moz-border-radius: 50% 0 0 50%;
   -ms-border-radius: 50% 0 0 50%;
   -o-border-radius: 50% 0 0 50%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
 }
 .like-after__part-middle {
   width: 2rem;
   height: 2rem;
   position: absolute;
   z-index: 3;
-  rotate: 45deg;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   background: linear-gradient(to right bottom, rgb(147, 86, 220), 40%, #FF79DA);
 }
 .like-after__part-left {
@@ -238,7 +246,15 @@ p {
   bottom: 1rem;
   z-index: 2;
   border-radius: 50% 50% 0 0;
-  rotate: 45deg;
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   background: linear-gradient(to right bottom, rgb(147, 86, 220), 70%, #FF79DA);
 }
 
@@ -1175,11 +1191,11 @@ footer {
   top: 1.5rem;
   right: 1.5rem;
   font-size: 2rem;
-  transform: rotate 0;
-  -webkit-transform: rotate 0;
-  -moz-transform: rotate 0;
-  -ms-transform: rotate 0;
-  -o-transform: rotate 0;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
   -webkit-transition: transform 500ms ease-in-out;
   -moz-transition: transform 500ms ease-in-out;

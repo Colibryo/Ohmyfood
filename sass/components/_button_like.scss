@@ -31,22 +31,26 @@
         -ms-transition: transform 400ms ease-in-out;
         -o-transition: transform 400ms ease-in-out;
 
-
     &__part-right {
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        z-index: 3;
-        border-radius: 50% 0 0 50%;
-        rotate: 45deg;
-        background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
-        -webkit-border-radius: 50% 0 0 50%;
-        -moz-border-radius: 50% 0 0 50%;
-        -ms-border-radius: 50% 0 0 50%;
-        -o-border-radius: 50% 0 0 50%;
-    }
+       width: 2rem;
+       height: 2rem;
+       position: absolute;
+       right: 1rem;
+       bottom: 1rem;
+       z-index: 3;
+       border-radius: 50% 0 0 50%;       
+       -webkit-border-radius: 50% 0 0 50%;
+       -moz-border-radius: 50% 0 0 50%;
+       -ms-border-radius: 50% 0 0 50%;
+       -o-border-radius: 50% 0 0 50%;
+       transform: rotate(45deg);
+       -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+       background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
+
+}
 
     /*carré milieu*/
     &__part-middle {
@@ -54,7 +58,11 @@
         height: 2rem;
         position: absolute;
         z-index: 3;
-        rotate: 45deg;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
         background: linear-gradient(to right bottom, rgba(147, 86, 220, 1), 40%, #FF79DA);
     }
 
@@ -66,10 +74,17 @@
         bottom: 1rem;
         z-index: 2;
         border-radius: 50% 50% 0 0;
-        rotate: 45deg;
+        -webkit-border-radius: 50% 50% 0 0;
+        -moz-border-radius: 50% 50% 0 0;
+        -ms-border-radius: 50% 50% 0 0;
+        -o-border-radius: 50% 50% 0 0;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
         background: linear-gradient(to right bottom, rgb(147, 86, 220, 1), 70%, #FF79DA);
-    }
-
+}
 
 }
 
