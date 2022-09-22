@@ -49,15 +49,8 @@
 
   &__heading .like--menu-position {
     position: absolute;
-    top: 0.5rem;
-    right: 0rem;
-    background-color: $background-container;
-  }
-
-  &__heading .like-after--menu-position {
-    position: absolute;
-    top: 0.65rem;
-    right: 0.1rem;
+    top: 0.7rem;
+    right: 1rem;
     background-color: $background-container;
   }
 }
