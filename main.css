@@ -54,7 +54,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -66,7 +66,7 @@ h3 {
   font-size: 1.1rem;
   font-weight: 700;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   h3 {
     font-size: 0.9rem;
   }
@@ -75,7 +75,7 @@ h3 {
 p {
   font-size: 1rem;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   p {
     font-size: 0.8rem;
   }
@@ -85,7 +85,7 @@ p {
   font-size: 1rem;
   font-weight: 700;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu__price {
     font-size: 0.8rem;
   }
@@ -95,18 +95,18 @@ p {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 2rem;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .logo {
     font-size: 1.3rem;
   }
 }
 
-.menu-main-container__heading h1 {
+.menu-main-container h1 {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 1.8rem;
 }
-@media all and (max-width: 350px) {
-  .menu-main-container__heading h1 {
+@media all and (max-width: 360px) {
+  .menu-main-container h1 {
     font-size: 1.3rem;
   }
 }
@@ -116,7 +116,7 @@ p {
   font-weight: 300;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   footer {
     font-size: 0.8rem;
   }
@@ -195,6 +195,15 @@ p {
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
+}
+@media all and (min-width: 992px) {
+  .like:hover > .like__after {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+  }
 }
 .like__before {
   display: inline-block;
@@ -384,7 +393,7 @@ p {
 }
 header {
   text-align: center;
-  margin: 1rem 1rem 1rem 1rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 @media all and (min-width: 767px) {
@@ -414,10 +423,10 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 14rem;
+  top: 13rem;
   width: 100%;
   height: auto;
-  padding-bottom: 13rem;
+  padding-bottom: 11rem;
   margin-bottom: 3.75rem;
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
@@ -426,9 +435,9 @@ header {
   -ms-border-radius: 25px 25px 0 0;
   -o-border-radius: 25px 25px 0 0;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu-main-container {
-    top: 10rem;
+    top: 12rem;
   }
 }
 @media all and (min-width: 992px) {
@@ -538,7 +547,7 @@ footer {
 }
 .presentation__heading {
   font-weight: 900;
-  margin: 1rem 2.5rem 0.5rem 2.5rem;
+  margin: 2.5rem 2.5rem 0.5rem 2.5rem;
 }
 .presentation__discover {
   margin: 0.5rem 1.5rem 1rem 1.5rem;
@@ -833,17 +842,38 @@ footer {
   width: auto;
 }
 
-.heading-image {
-  width: 100%;
+.heading-image-first-dimension {
+  width: 110%;
   height: auto;
-  object-fit: fill;
   min-height: 15rem;
   position: absolute;
+  overflow: hidden;
+}
+.heading-image-first-dimension__restaurant-img {
+  position: absolute;
+  right: 1rem;
+  width: 100%;
+  height: 114%;
+  object-fit: cover;
+}
+
+.heading-image-second-dimension {
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  position: absolute;
+  overflow: hidden;
+}
+.heading-image-second-dimension__restaurant-img {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
 }
 @media all and (min-width: 992px) {
-  .heading-image__restaurant-img {
+  .heading-image-second-dimension__restaurant-img {
     width: 100%;
-    height: 60rem;
+    height: 100%;
   }
 }
 
@@ -853,7 +883,12 @@ footer {
   height: auto;
   position: relative;
   margin: 1rem 1rem 1rem 1rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
+}
+@media all and (min-width: 992px) {
+  .menu-main-container__heading {
+    padding-right: 6rem;
+  }
 }
 .menu-main-container__heading .like--menu-position {
   position: absolute;
@@ -869,7 +904,7 @@ footer {
   flex-direction: column;
   margin: 1rem 1rem 1rem 1rem;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu {
     margin: 0.8rem;
   }
@@ -914,15 +949,15 @@ footer {
   display: flex;
   flex-direction: row;
   width: auto;
-  height: 5rem;
+  height: 4.5rem;
   padding: 0;
   margin-bottom: 1rem;
   box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   background-color: white;
   cursor: pointer;
   overflow: hidden;
@@ -1043,8 +1078,22 @@ footer {
   -ms-transform: translate(-5rem);
   -o-transform: translate(-5rem);
 }
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__price {
+    transform: translate(-5rem);
+    -webkit-transform: translate(-5rem);
+    -moz-transform: translate(-5rem);
+    -ms-transform: translate(-5rem);
+    -o-transform: translate(-5rem);
+  }
+}
 .menu__selection:active .menu__container-selection {
   padding-right: 8rem;
+}
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__container-selection {
+    padding-right: 8rem;
+  }
 }
 .menu__selection:active .menu__check {
   transform: scaleX(1);
@@ -1052,6 +1101,15 @@ footer {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
+}
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__check {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+  }
 }
 .menu__container-selection {
   display: flex;
@@ -1080,7 +1138,7 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu__name {
     padding-left: 0.5rem;
   }
@@ -1093,7 +1151,7 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu__details {
     padding-left: 0.5rem;
   }
@@ -1111,7 +1169,7 @@ footer {
   -ms-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
   .menu__price {
     right: 1rem;
   }
@@ -1141,7 +1199,7 @@ footer {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 1.5rem;
+  top: 1.25rem;
   right: 1.5rem;
   font-size: 2rem;
   transform: rotate(0deg);
@@ -1165,6 +1223,15 @@ footer {
   -o-transform: rotate(360deg);
 }
 
+@media all and (min-width: 992px) {
+  .menu__selection:hover .fa-circle-check {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
 .button-container {
   display: flex;
   justify-content: center;

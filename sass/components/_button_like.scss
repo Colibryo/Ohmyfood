@@ -7,7 +7,7 @@
     height: 1.6rem;
     border: none;
     color: black;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -15,14 +15,24 @@
     -o-border-radius: 50%;
     cursor: pointer;
 
-    &:active> .like__after{
+    &:active>.like__after {
         transform: scale(1.15);
         -webkit-transform: scale(1.15);
         -moz-transform: scale(1.15);
         -ms-transform: scale(1.15);
         -o-transform: scale(1.15);
-}
-    
+    }
+
+    @include desktop-only {
+        &:hover>.like__after {
+            transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            -moz-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            -o-transform: scale(1.15);
+        }
+    }
+
     &__before {
         display: inline-block;
         position: absolute;
@@ -57,5 +67,5 @@
         -moz-transition: transform 400ms ease-in-out;
         -ms-transition: transform 400ms ease-in-out;
         -o-transition: transform 400ms ease-in-out;
-}
+    }
 }

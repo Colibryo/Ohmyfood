@@ -18,10 +18,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 14rem;
+    top: 13rem;
     width: 100%;
     height: auto;
-    padding-bottom: 13rem;
+    padding-bottom: 11rem;
     margin-bottom: 3.75rem;
     background-color: $background-container;
     border-radius: 25px 25px 0 0;
@@ -29,17 +29,16 @@
     -moz-border-radius: 25px 25px 0 0;
     -ms-border-radius: 25px 25px 0 0;
     -o-border-radius: 25px 25px 0 0;
-  
+
     @include small-mobile-only {
-      top: 10rem;
+        top: 12rem;
     }
 
-
     @include desktop-only {
-    width: 95%;
-    height:50%;
-    align-items: center;
-    margin: auto;
-    top:10rem;
+        width: 95%;
+        height: 50%;
+        align-items: center;
+        margin: auto;
+        top: 10rem;
     }
 }
