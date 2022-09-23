@@ -12,6 +12,10 @@
         margin-bottom: 1rem;
     }
 
+    @include desktop-only {
+        margin-bottom: 0;
+    }
+
     &__location {
         width: 100%;
         display: flex;
@@ -50,7 +54,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0;
-        padding: 1rem 1rem 5rem 1rem;
+        padding: 1rem 1rem 6rem 1rem;
         background-color: $colour-secondary;
     }
 
@@ -68,7 +72,6 @@
             margin: 2rem;
             padding: 0;
         }
-
     }
 
     &__container {
@@ -154,13 +157,14 @@
     height: auto;
     gap: 1rem;
     background-color: $background-container;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 
     @include tablette-only {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         width: 65%;
+        padding-bottom: 6rem;
     }
 
     @include desktop-only {
@@ -176,10 +180,11 @@
         height: auto;
 
         @include tablette-only {
+            width: 100%;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 10px;
-            padding: 3.875rem 0 3.875rem 0;
+            padding: 4rem 0 1rem 0;
         }
 
     }

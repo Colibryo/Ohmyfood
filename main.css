@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -392,9 +393,11 @@ p {
   }
 }
 header {
+  width: auto;
+  height: auto;
   text-align: center;
-  margin-top: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: white;
 }
 @media all and (min-width: 767px) {
   header {
@@ -443,10 +446,11 @@ header {
 @media all and (min-width: 992px) {
   .menu-main-container {
     width: 95%;
-    height: 50%;
+    height: auto;
     align-items: center;
     margin: auto;
-    top: 10rem;
+    top: 6rem;
+    opacity: 0.95;
   }
 }
 
@@ -460,7 +464,6 @@ footer {
   footer {
     display: flex;
     justify-content: space-around;
-    height: auto;
   }
 }
 
@@ -532,6 +535,11 @@ footer {
     margin-bottom: 1rem;
   }
 }
+@media all and (min-width: 992px) {
+  .presentation {
+    margin-bottom: 0;
+  }
+}
 .presentation__location {
   width: 100%;
   display: flex;
@@ -568,7 +576,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
-    padding: 1rem 1rem 5rem 1rem;
+    padding: 1rem 1rem 6rem 1rem;
     background-color: #FF79DA;
   }
 }
@@ -670,7 +678,7 @@ footer {
   height: auto;
   gap: 1rem;
   background-color: #f2f2f2;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 @media all and (min-width: 767px) {
   .container-restaurant {
@@ -678,6 +686,7 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     width: 65%;
+    padding-bottom: 6rem;
   }
 }
 @media all and (min-width: 992px) {
@@ -695,10 +704,11 @@ footer {
 }
 @media all and (min-width: 767px) {
   .container-restaurant__cards {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 3.875rem 0 3.875rem 0;
+    padding: 4rem 0 1rem 0;
   }
 }
 .container-restaurant__heading {
@@ -824,8 +834,6 @@ footer {
 }
 
 .header-menu {
-  width: auto;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -841,9 +849,14 @@ footer {
   position: relative;
   width: auto;
 }
+@media all and (min-width: 992px) {
+  .header-menu__return {
+    left: 3rem;
+  }
+}
 
 .heading-image-first-dimension {
-  width: 110%;
+  width: 100%;
   height: auto;
   min-height: 15rem;
   position: absolute;
@@ -851,7 +864,6 @@ footer {
 }
 .heading-image-first-dimension__restaurant-img {
   position: absolute;
-  right: 1rem;
   width: 100%;
   height: 114%;
   object-fit: cover;
@@ -870,13 +882,35 @@ footer {
   height: 110%;
   object-fit: cover;
 }
+
 @media all and (min-width: 992px) {
-  .heading-image-second-dimension__restaurant-img {
-    width: 100%;
-    height: 100%;
+  .heading-image-first-dimension,
+.heading-image-first-dimension__restaurant-img,
+.heading-image-second-dimension,
+.heading-image-second-dimension__restaurant-img {
+    display: none;
+  }
+  .french-style--bg-page {
+    background-image: url("assets/img/A_la_Française.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .delite-senses--bg-page {
+    background-image: url("assets/img/A_la_Française.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .enchanted-note--bg-page {
+    background-image: url("assets/img/La_note_enchantée.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .palette-of-taste--bg-page {
+    background-image: url("assets/img/La_palette_du_goût.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
-
 .menu-main-container__heading {
   line-height: 3rem;
   width: auto;
@@ -1160,7 +1194,7 @@ footer {
   display: inline-block;
   position: absolute;
   right: 2rem;
-  bottom: 1.1rem;
+  bottom: 0.9rem;
   width: 1rem;
   height: 1rem;
   transition: transform 500ms ease-in-out;
