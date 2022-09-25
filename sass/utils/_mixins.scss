@@ -1,6 +1,19 @@
 @mixin initial-shadow-element ($size: $shadow-size, $blur-effect: $shadow-blur-effect, $colour: $colour-shadow ) {
     box-shadow: $size $blur-effect $colour;
 }
+@mixin display-bg-img {
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+@mixin dimension-text-ellipsis{
+width: 100%;
+height: auto;
+padding-left: 1rem;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
 $breakpoints-small-mobile: (
     mobile: 360px

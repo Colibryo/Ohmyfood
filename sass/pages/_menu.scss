@@ -11,7 +11,7 @@
     font-size: 1.5rem;
   }
 
-  &__return.logo {
+  .logo {
     position: relative;
     width: auto;
   }
@@ -23,29 +23,20 @@
   }
 }
 
-.heading-image-first-dimension {
+.heading-image{
   width: 100%;
   height: auto;
   min-height: 15rem;
   position: absolute;
   overflow: hidden;
 
-  &__restaurant-img {
+  &__first-dimension {
     position: absolute;
     width: 100%;
     height: 114%;
     object-fit: cover;
-  }
-}
-
-.heading-image-second-dimension {
-  width: 100%;
-  height: auto;
-  min-height: 15rem;
-  position: absolute;
-  overflow: hidden;
-
-  &__restaurant-img {
+  } 
+  &__second-dimension {
     position: absolute;
     width: 100%;
     height: 110%;
@@ -55,37 +46,31 @@
 
 @include desktop-only {
 
-  .heading-image-first-dimension,
-  .heading-image-first-dimension__restaurant-img,
-  .heading-image-second-dimension,
-  .heading-image-second-dimension__restaurant-img {
+  .heading-image,
+  .heading-image__first-dimension,
+  .heading-image__second-dimension {
     display: none;
   }
 
   .french-style--bg-page {
     background-image: url("assets/img/A_la_Française.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include display-bg-img;
   }
 
   .delite-senses--bg-page {
     background-image: url("assets/img/A_la_Française.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include display-bg-img;
   }
 
   .enchanted-note--bg-page {
     background-image: url("assets/img/La_note_enchantée.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include display-bg-img;
   }
 
   .palette-of-taste--bg-page {
     background-image: url("assets/img/La_palette_du_goût.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include display-bg-img;
   }
-
 }
 
 .menu-main-container {
@@ -184,19 +169,19 @@
   }
 
   &__selection--first-apparition {
-    animation: first-apparition 1000ms 2900ms ease-in;
-    -webkit-animation: first-apparition 1000ms 2900ms ease-in;
-  }
+    animation: first-apparition 1000ms 1950ms ease-in;
+    -webkit-animation: first-apparition 1000ms 1950ms ease-in;
+}
 
   @keyframes first-apparition {
     0% {
       opacity: 0;
-      transform: translate(0, 25px);
-      -webkit-transform: translate(0, 25px);
-      -moz-transform: translate(0, 25px);
-      -ms-transform: translate(0, 25px);
-      -o-transform: translate(0, 25px);
-    }
+      transform: translate(0, 2.5rem);
+      -webkit-transform: translate(0, 2.5rem);
+      -moz-transform: translate(0, 2.5rem);
+      -ms-transform: translate(0, 2.5rem);
+      -o-transform: translate(0, 2.5rem);
+}
 
     95% {
       opacity: 0.2;
@@ -214,19 +199,19 @@
 
   &__selection--second-apparition {
     transform-origin: bottom;
-    animation: second-apparition 1200ms 2950ms ease-in;
-    -webkit-animation: second-apparition 1200ms 2950ms ease-in;
-  }
+    animation: second-apparition 1200ms 1980ms ease-in;
+    -webkit-animation: second-apparition 1200ms 1980ms ease-in;
+}
 
   @keyframes second-apparition {
     0% {
       opacity: 0;
-      transform: translate(0, 25px);
-      -webkit-transform: translate(0, 25px);
-      -moz-transform: translate(0, 25px);
-      -ms-transform: translate(0, 25px);
-      -o-transform: translate(0, 25px);
-    }
+      transform: translate(0, 2.5rem);
+      -webkit-transform: translate(0, 2.5rem);
+      -moz-transform: translate(0, 2.5rem);
+      -ms-transform: translate(0, 2.5rem);
+      -o-transform: translate(0, 2.5rem);
+}
 
     95% {
       opacity: 0.2;
@@ -244,19 +229,19 @@
 
   &__selection--third-apparition {
     transform-origin: bottom;
-    animation: third-apparition 1400ms 3000ms ease-in;
-    -webkit-animation: third-apparition 1400ms 3000ms ease-in;
-  }
+    animation: third-apparition 1400ms 1990ms ease-in;
+    -webkit-animation: third-apparition 1400ms 1990ms ease-in;
+}
 
   @keyframes third-apparition {
     0% {
       opacity: 0;
-      transform: translate(0, 25px);
-      -webkit-transform: translate(0, 25px);
-      -moz-transform: translate(0, 25px);
-      -ms-transform: translate(0, 25px);
-      -o-transform: translate(0, 25px);
-    }
+      transform: translate(0, 2.5rem);
+      -webkit-transform: translate(0, 2.5rem);
+      -moz-transform: translate(0, 2.5rem);
+      -ms-transform: translate(0, 2.5rem);
+      -o-transform: translate(0, 2.5rem);
+}
 
     95% {
       opacity: 0.2;
@@ -274,19 +259,19 @@
 
   &__selection--fourth-apparition {
     transform-origin: bottom;
-    animation: fourth-apparition 1600ms 3010ms ease-in;
-    -webkit-animation: fourth-apparition 1600ms 3010ms ease-in;
-  }
+    animation: fourth-apparition 1600ms 2000ms ease-in;
+    -webkit-animation: fourth-apparition 1600ms 2000ms ease-in;
+}
 
   @keyframes fourth-apparition {
     0% {
       opacity: 0;
-      transform: translate(0, 25px);
-      -webkit-transform: translate(0, 25px);
-      -moz-transform: translate(0, 25px);
-      -ms-transform: translate(0, 25px);
-      -o-transform: translate(0, 25px);
-    }
+      transform: translate(0, 2.5rem);
+      -webkit-transform: translate(0, 2.5rem);
+      -moz-transform: translate(0, 2.5rem);
+      -ms-transform: translate(0, 2.5rem);
+      -o-transform: translate(0, 2.5rem);
+}
 
     95% {
       opacity: 0.2;
@@ -369,12 +354,7 @@
   }
 
   &__name {
-    width: 100%;
-    height: auto;
-    padding-left: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include dimension-text-ellipsis;
 
     @include small-mobile-only {
       padding-left: 0.5rem;
@@ -382,12 +362,7 @@
   }
 
   &__details {
-    width: 100%;
-    height: auto;
-    padding-left: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include dimension-text-ellipsis;
 
     @include small-mobile-only {
       padding-left: 0.5rem;
@@ -477,8 +452,4 @@
 .button-container {
   display: flex;
   justify-content: center;
-}
-
-footer {
-  position: relative;
 }

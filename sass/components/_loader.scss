@@ -10,10 +10,10 @@
     position: fixed;
     top: 0;
     background-color: $colour-tertiary;
-    animation: opacity 3000ms 3000ms both;
-    -webkit-animation: opacity 3000ms 3000ms both;
-
-    &__heading {
+    animation: opacity 1000ms 2100ms both;
+    -webkit-animation: opacity 1000ms 2100ms both;
+    &__heading
+{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -106,20 +106,20 @@
 
 .loader-dots div:nth-child(1) {
     left: 2rem;
-    animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
-    -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
+    animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
+    -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
 }
 
 .loader-dots div:nth-child(2) {
     left: 6rem;
-    animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
-    -webkit-animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
+    animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
+    -webkit-animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
 }
 
 .loader-dots div:nth-child(3) {
     left: 10rem;
-    animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
-    -webkit-animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 05) infinite;
+    animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
+    -webkit-animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 05) 2;
 }
 
 @keyframes pulsar {
