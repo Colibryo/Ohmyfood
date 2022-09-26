@@ -222,7 +222,6 @@
     background-color: white;
 
     @include tablette-only {
-        align-items: flex-end;
         width: 45%;
         margin: 0.2rem;
     }

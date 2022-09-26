@@ -468,9 +468,6 @@ header {
 
 footer {
   position: relative;
-}
-
-footer {
   width: auto;
   height: auto;
   background-color: rgb(49, 49, 49);
@@ -762,7 +759,6 @@ footer {
 }
 @media all and (min-width: 767px) {
   .restaurant {
-    align-items: flex-end;
     width: 45%;
     margin: 0.2rem;
   }
