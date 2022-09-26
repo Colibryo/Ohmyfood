@@ -18,106 +18,95 @@
 </head>
 
 <body class="palette-of-taste--bg-page">
-
+    <!--loader affiché avant apparition de la page d'accueil-->
     <div class="loader">
+        <!--divs contenant le logo animé-->
         <div class="loader__heading">
             <div>Oh</div>
             <div>my</div>
             <div>food </div>
         </div>
+        <!--divs contenant les points animés-->
         <div class="loader-dots">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </div>
-
+    <!--entête contenant l'icone servant de lien vers la page d'accueil et le logo du site-->
     <header class="header-menu">
-
-        <div class="header-menu__return"><a href="index.html" title="retour à la page d'accueil"><i
-                    class="fa-solid fa-arrow-left"></i></a></div>
+        <div class="header-menu__return">
+            <a href="index.html" title="retour à la page d'accueil"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
         <h1 class="logo">ohmyfood</h1>
-
     </header>
-
+    <!--div contenant l'image de présentation du restaurant -->
     <div class="heading-image">
         <img class="heading-image__first-dimension" src="assets/img/La_palette_du_goût.jpg"
             alt="restaurant La palette du goût">
     </div>
-
+    <!--conteneur des menus-->
     <main class="menu-main-container">
-
+        <!--div contenant le titre avec le nom du restaurant et le bouton pour liker-->
         <div class="menu-main-container__heading">
-
+            <!--titre contenant le nom du restaurant-->
             <h1>La palette du goût</h1>
-
-            <button class="like like--menu-position"><span class="like__before"><i
-                        class="fa-regular fa-heart"></i></span><span class="like__after"><i
-                        class="fa-solid fa-heart"></i></span></button>
-
+            <!--bouton avec 2 icones en forme de coeur, le deuxième apparaît au clic en version mobile ou au survol pour les version tablettes et desktop-->
+            <button class="like like--menu-position">
+                <span class="like__before"><i class="fa-regular fa-heart"></i></span>
+                <span class="like__after"><i class="fa-solid fa-heart"></i></span>
+            </button>
         </div>
-
+        <!--section contenant les menus des entrées-->
         <section class="menu">
-
+            <!--partie "entrées" avec un titre et une div pour le soulignement-->
             <div class="menu__title-container">
-
                 <h2 class="menu__heading">ENTRÉES</h2>
                 <div class="menu__underline"></div>
-
             </div>
-
+            <!-- conteneur de l'entrée permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--first-apparition">
-
+                <!--div contenant les éléments de l'entrée : titre, parapgraphe et le check pour sélectionner l'entrée-->
                 <div class="menu__container-selection">
                     <h3 class="menu__name">Fricassé d'escargot</h3>
-                    <p class="menu__details">Au piment d'espelette<span class="menu__price">25 €</span>
-                    </p>
-
+                    <p class="menu__details">Au piment d'espelette<span class="menu__price">25 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
-
+            <!-- conteneur de l'entrée permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--second-apparition">
-
+                <!--div contenant les éléments de l'entrée : titre, parapgraphe et le check pour sélectionner l'entrée-->
                 <div class="menu__container-selection">
-
                     <h3 class="menu__name">Foie gras de canard mi-cuit</h3>
                     <p class="menu__details">Et ses copeaux de truffe noire<span class="menu__price">35 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
-
+            <!-- conteneur de l'entrée permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--third-apparition">
-
+                <!--div contenant les éléments de l'entrée : titre, parapgraphe et le check pour sélectionner l'entrée-->
                 <div class="menu__container-selection">
-
                     <h3 class="menu__name">Oeuf au plat</h3>
-
-                    <p class="menu__details">Assaisonné à la truffe sur lit de cresson<span class="menu__price">20
-                            €</span></p>
+                    <p class="menu__details">Assaisonné à la truffe sur lit de cresson<span class="menu__price">20 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
 
         </section>
-
+        <!--section contenant les menus des plats-->
         <section class="menu">
-
+            <!--partie "plats" avec un titre et une div pour le soulignement-->
             <div class="menu__title-container">
-
                 <h2 class="menu__heading">PLATS</h2>
-
                 <div class="menu__underline"></div>
-
             </div>
-
+            <!-- conteneur du plat permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--first-apparition">
-
+                <!--div contenant les éléments du plat : titre, parapgraphe et le check pour sélectionner le plat-->
                 <div class="menu__container-selection">
-
                     <h3 class="menu__name">Filet de boeuf aux herbes</h3>
                     <p class="menu__details">Accompagnée de sa ribambelle de légumes croquants<span
                             class="menu__price">40 €</span></p>
@@ -125,75 +114,70 @@
                 </div>
 
             </div>
-
+            <!-- conteneur du plat permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--second-apparition">
-
+                <!--div contenant les éléments du plat : titre, parapgraphe et le check pour sélectionner le plat-->
                 <div class="menu__container-selection">
-
                     <h3 class="menu__name">Parmentier de queue de boeuf</h3>
                     <p class="menu__details">A la truffe sur sa purée de panais<span class="menu__price">35 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
-
+            <!-- conteneur du plat permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--third-apparition">
-
+                <!--div contenant les éléments du plat : titre, parapgraphe et le check pour sélectionner le plat-->
                 <div class="menu__container-selection">
-
                     <h3 class="menu__name">Filet de turbot</h3>
-
                     <p class="menu__details">Aux agrumes<span class="menu__price">44 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
 
         </section>
-
+        <!--section contenant les menus des desserts-->
         <section class="menu">
-
+            <!--partie "desserts" avec un titre et une div pour le soulignement-->
             <div class="menu__title-container">
-
                 <h2 class="menu__heading">DESSERTS</h2>
                 <div class="menu__underline"></div>
-
             </div>
-
+            <!-- conteneur du dessert permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--first-apparition">
-
+                <!--div contenant les éléments du dessert : titre, paragraphe et le check pour sélectionner le dessert-->
                 <div class="menu__container-selection">
                     <h3 class="menu__name">Paris-Brest</h3>
                     <p class="menu__details">Revisité<span class="menu__price">18 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
-
+            <!-- conteneur du dessert permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--second-apparition">
-
+                <!--div contenant les éléments du dessert : titre, paragraphe et le check pour sélectionner le dessert-->
                 <div class="menu__container-selection">
 
                     <h3 class="menu__name">Macaron au chocolat d'exception</h3>
                     <p class="menu__details">Et glace à la vanille de Madagascar<span class="menu__price">22 €</span>
                     </p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
-
+            <!-- conteneur du dessert permettant de positionner le bloc d'éléments et régler l'animation pour le faire apparaître-->
             <div class="menu__selection menu__selection--third-apparition">
-
+                <!--div contenant les éléments du dessert : titre, paragraphe et le check pour sélectionner le dessert-->
                 <div class="menu__container-selection">
                     <h3 class="menu__name">Mousse au chocolat</h3>
                     <p class="menu__details">Au piment d'espelette<span class="menu__price">23 €</span></p>
+                    <!--div de l'animation check apparaissant avec un clic en version mobile et avec le survol pour les version tablettes et desktop-->
                     <div class="menu__check"><i class="fa-solid fa-circle-check"></i></div>
                 </div>
-
             </div>
 
         </section>
-
+        <!--div avec bouton pour commander les plats-->
         <div class="button-container">
             <button class="button-action">
                 Commander
@@ -203,18 +187,20 @@
     </main>
 
     <footer>
+        <!--pied de page avec le menu de navigation pour le site-->
         <nav class="nav">
+            <!--logo du site-->
             <h2 class="nav__logo">ohmyfood</h2>
+            <!--liste des liens du site-->
             <ul class="nav__container">
-                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
-                            class="fa-solid fa-utensils"></i>Proposer un
-                        restaurant</a></li>
-                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
-                            class="fa-solid fa-handshake-angle fa-sm"></i>Devenir
-                        partenaire</a></li>
+                <!--premier lien avec une icone qui renverrons vers les propositions de restaurants-->
+                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <!--deuxième lien avec une icone qui renverrons vers les propositions de partenariat-->
+                <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i class="fa-solid fa-handshake-angle fa-sm"></i>Devenir partenaire</a></li>
+                <!--troisième lien qui renverra vers les mentions légales-->
                 <li><a class="nav__link nav__link--color" href="#" title="click here">Mentions légales</a></li>
-                <li><a class="nav__link nav__link--color" href="mailto:example@example.com"
-                        title="click here">Contact</a></li>
+                <!--quatrième lien qui renvoie et active le mail de contact-->
+                <li><a class="nav__link nav__link--color" href="mailto:example@example.com" title="click here">Contact</a></li>
             </ul>
         </nav>
     </footer>

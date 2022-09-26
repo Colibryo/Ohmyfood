@@ -18,51 +18,59 @@
 </head>
 
 <body>
-
+    <!--loader affiché avant apparition de la page d'accueil-->
     <div class="loader">
+        <!--divs contenant le logo animé-->
         <div class="loader__heading">
             <div>Oh</div>
             <div>my</div>
             <div>food </div>
         </div>
+        <!--divs contenant les points animés-->
         <div class="loader-dots">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </div>
-
+    <!--logo du site-->
     <header>
         <div class="logo">ohmyfood</div>
     </header>
 
     <main class="home-main-container">
+        <!--partie correspondant à la localisation du restaurant et présentation du site-->
         <section class="presentation">
+            <!--partie avec localisation des restaurants-->
             <div class="presentation__location"><i class="fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
             </div>
+            <!--titre et paragraphe de présentation-->
             <h1 class="presentation__heading">Réservez le menu qui vous convient</h1>
             <p class="presentation__discover">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-
+            <!--bouton renvoyant à la découverte des restaurants-->
             <button class="button-action">
                 Explorez nos restaurants
             </button>
 
         </section>
-
+        <!--conteneur avec indications sur le fonctionnement du site -->
         <section class="functioning">
+            <!--titre du conteneur-->
             <h2 class="functioning__heading">Fonctionnement</h2>
-            <div class="functioning__container">
 
+            <!--conteneur de la présentation du fonctionnement du site avec trois étapes-->
+            <div class="functioning__container">
+                <!--première étape avec son numéro et son icone-->
                 <p class="functioning__explain"><span class="functioning__number">1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>Choissez un restaurant
                 </p>
-
+                <!--deuxième étape avec son numéro et son icone-->
                 <p class="functioning__explain"><span class="functioning__number">2</span>
                     <span class="functionning__icon"><i class="fa-solid fa-list"></i></span>
                     Composez votre menu
                 </p>
-
+                <!--troisième étape avec son numéro et son icone-->
                 <p class="functioning__explain"><span class="functioning__number">3</span>
                     <i class="fa-solid fa-store"></i>Dégustez au restaurant
                 </p>
@@ -70,56 +78,62 @@
 
         </section>
 
-        <!--cartes-->
-
+        <!--conteneur présentant les restaurants-->
         <section class="container-restaurant">
 
+            <!--titre du conteneur-->
             <h2 class="container-restaurant__heading">Restaurants</h2>
-
+            <!--conteneur des cartes présentant les restaurants-->
             <div class="container-restaurant__cards">
-                <!--carte 1-->
+                <!--carte n°1 -->
                 <div class="restaurant">
+                    <!--lien renvoyant à la page du menu-->
                     <a class="restaurant__link" href="menu_the_palette_of_taste.html" title="restaurant gastronomique">
                         <div class="restaurant__card">
+                            <!--conteneur et image du restaurant-->
                             <div class="restaurant__container-img">
                                 <img class="restaurant__img" src="assets/img//La_palette_du_goût.jpg"
                                     alt="restaurant la palette du goût">
                             </div>
+                            <!--informations sur le restaurant-->
                             <div class="restaurant__footer">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
-
+                            <!--bouton indquant les nouveaux restaurants-->
                             <div class="btn">
                                 <div class="btn__new">Nouveau</div>
                             </div>
                         </div>
                     </a>
-                    <!--coeur*2-->
+                    <!--bouton avec 2 icones en forme de coeur, le deuxième apparaît au clic en version mobile ou au survol pour les version tablettes et desktop-->
                     <button class="like like--card-position"><span class="like__before"><i
                                 class="fa-regular fa-heart"></i></span><span class="like__after"><i
                                 class="fa-solid fa-heart"></i></span></button>
                 </div>
 
-                <!--carte 2-->
+                <!--carte n°2-->
                 <div class="restaurant">
+                    <!--lien renvoyant à la page du menu-->
                     <a class="restaurant__link" href="menu_the_enchanted_note.html" title="restaurant gastronomique">
-
                         <div class="restaurant__card">
+                            <!--conteneur et image du restaurant-->
                             <div class="restaurant__container-img">
                                 <img class="restaurant__img" src="assets/img//La_note_enchantée.jpg"
                                     alt="restaurant la note enchantée">
                             </div>
+                            <!--informations sur le restaurant-->
                             <div class="restaurant__footer">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
+                            <!--bouton indquant les nouveaux restaurants-->
                             <div class="btn">
                                 <div class="btn__new">Nouveau</div>
                             </div>
                         </div>
                     </a>
-                    <!--coeur*2-->
+                    <!--bouton avec 2 icones en forme de coeur, le deuxième apparaît au clic en version mobile ou au survol pour les version tablettes et desktop-->
                     <button class="like like--card-position"><span class="like__before"><i
                                 class="fa-regular fa-heart"></i></span><span class="like__after"><i
                                 class="fa-solid fa-heart"></i></span></button>
@@ -127,19 +141,22 @@
 
                 <!--carte 3-->
                 <div class="restaurant">
+                    <!--lien renvoyant à la page du menu-->
                     <a class="restaurant__link" href="menu_french_style.html" title="restaurant gastronomique">
                         <div class="restaurant__card">
+                            <!--conteneur et image du restaurant-->
                             <div class="restaurant__container-img">
                                 <img class="restaurant__img" src="assets/img/A_la_Française.jpg"
                                     alt="restaurant à la Française">
                             </div>
+                            <!--informations sur le restaurant-->
                             <div class="restaurant__footer">
                                 <h3>À la Française</h3>
                                 <p>Cité Rouge</p>
                             </div>
                         </div>
                     </a>
-                    <!--coeur*2-->
+                    <!--bouton avec 2 icones en forme de coeur, le deuxième apparaît au clic en version mobile ou au survol pour les version tablettes et desktop-->
                     <button class="like like--card-position"><span class="like__before"><i
                                 class="fa-regular fa-heart"></i></span><span class="like__after"><i
                                 class="fa-solid fa-heart"></i></span></button>
@@ -147,20 +164,23 @@
 
                 <!--carte 4-->
                 <div class="restaurant">
+                    <!--lien renvoyant à la page du menu-->
                     <a class="restaurant__link" href="menu_the_delite_of_the_senses.html"
                         title="restaurant gastronomique">
                         <div class="restaurant__card">
+                            <!--conteneur et image du restaurant-->
                             <div class="restaurant__container-img">
                                 <img class="restaurant__img" src="assets/img/Le_délice_des_sens.jpg"
                                     alt="restaurant le délice des sens">
                             </div>
+                            <!--informations sur le restaurant-->
                             <div class="restaurant__footer">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
                         </div>
                     </a>
-                    <!--coeur*2 pour switch-->
+                    <!--bouton avec 2 icones en forme de coeur, le deuxième apparaît au clic en version mobile ou au survol pour les version tablettes et desktop-->
                     <button class="like like--card-position"><span class="like__before"><i
                                 class="fa-regular fa-heart"></i></span><span class="like__after"><i
                                 class="fa-solid fa-heart"></i></span></button>
@@ -172,16 +192,23 @@
     </main>
 
     <footer>
+        <!--pied de page avec le menu de navigation pour le site-->
         <nav class="nav">
+            <!--logo du site-->
             <h2 class="nav__logo">ohmyfood</h2>
+            <!--liste des liens du site-->
             <ul class="nav__container">
+                <!--premier lien avec une icone qui renverrons vers les propositions de restaurants-->
                 <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
                             class="fa-solid fa-utensils"></i>Proposer un
                         restaurant</a></li>
+                <!--deuxième lien avec une icone qui renverrons vers les propositions de partenariat-->
                 <li><a class="nav__link-icon nav__link--color" href="#" title="click here"><i
                             class="fa-solid fa-handshake-angle fa-sm"></i>Devenir
                         partenaire</a></li>
+                <!--troisième lien qui renverra vers les mentions légales-->
                 <li><a class="nav__link nav__link--color" href="#" title="click here">Mentions légales</a></li>
+                <!--quatrième lien qui renvoie et active le mail de contact-->
                 <li><a class="nav__link nav__link--color" href="mailto:example@example.com"
                         title="click here">Contact</a></li>
             </ul>
