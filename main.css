@@ -44,25 +44,31 @@ td, th {
   padding: 0;
 }
 
+/*fin du mini reset*/
+/*suppression du style par défaut de tous les liens*/
 a {
   text-decoration: none;
   color: black;
 }
 
+/*font de l'ensemble de la page et hauteur de lignes réduite*/
 body {
   font-family: "Roboto", sans-serif;
   line-height: 130%;
 }
 
+/*taille du texte des h1*/
 h1 {
   font-size: 1.6rem;
 }
 
+/*taille et gras du texte des h2*/
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
+/*taille et gras du texte des h3*/
 h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -73,6 +79,7 @@ h3 {
   }
 }
 
+/*taille du texte des paragraphes*/
 p {
   font-size: 1rem;
 }
@@ -82,6 +89,7 @@ p {
   }
 }
 
+/*taille du texte et gras des prix*/
 .menu__price {
   font-size: 1rem;
   font-weight: 700;
@@ -92,6 +100,7 @@ p {
   }
 }
 
+/*font et taille du logo en entête*/
 .logo {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 2rem;
@@ -102,6 +111,13 @@ p {
   }
 }
 
+/*taille et gras du logo dans le footer*/
+.nav__logo--footer {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*font et taille du titre des restaurants dans les pages menus*/
 .menu-main-container h1 {
   font-family: "Shrikhand", "Robot", sans-serif;
   font-size: 1.8rem;
@@ -112,17 +128,20 @@ p {
   }
 }
 
+/*taille et gras des titres des plats dans les menus*/
 .menu__heading {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
+/*taille des liens dans le footer pour version petits mobiles*/
 @media all and (max-width: 360px) {
   footer {
     font-size: 0.8rem;
   }
 }
 
+/*position, dimension, couleurs et effets de transition des boutons "explorer nos restaurants" et "commander"*/
 .button-action {
   display: inline-block;
   position: relative;
@@ -185,6 +204,7 @@ p {
   -o-transition: opacity 400ms ease-in;
 }
 
+/*bouton like : position, taille, forme, couleur et effets de transition des boutons "j'aime"*/
 .like {
   display: inline-block;
   display: flex;
@@ -253,6 +273,7 @@ p {
   -o-transition: transform 300ms ease-in-out;
 }
 
+/*position, taille, couleur et forme des boutons "Nouveau"*/
 .btn {
   position: absolute;
   top: 0.5rem;
@@ -272,6 +293,7 @@ p {
   border: none;
 }
 
+/*position, couleur et taille du fonds de page du loader et sa durée avant disparition*/
 .loader {
   width: 100%;
   height: 100%;
@@ -286,6 +308,17 @@ p {
   background-color: #99E2D0;
   animation: opacity 1000ms 2100ms both;
   -webkit-animation: opacity 1000ms 2100ms both;
+  /*animation pour l'apparition et de la disparition du loader laissant place à la page chargée*/
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+    z-index: 4;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 .loader__heading {
   display: flex;
@@ -305,6 +338,7 @@ p {
   -webkit-animation: loader 1500ms 1200ms cubic-bezier(2, 1.8, 3, 5) 1;
 }
 
+/*animation du logo dans le loader*/
 @keyframes loader {
   0% {
     transform: scaleY(0.1);
@@ -335,16 +369,7 @@ p {
     -o-transform: scaleY(1);
   }
 }
-@keyframes opacity {
-  0% {
-    opacity: 1;
-    z-index: 4;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
+/*position, dimension et durée de l'animation appliqués au conteneur des points du loader*/
 .loader-dots {
   position: relative;
   display: flex;
@@ -357,6 +382,7 @@ p {
   -webkit-animation: opacity 3000ms 3000ms both;
 }
 
+/*position, taille, couleur et forme des points du loader*/
 .loader-dots div {
   top: 2rem;
   left: 2rem;
@@ -370,24 +396,28 @@ p {
   -o-border-radius: 50%;
 }
 
+/*position et décalage de l'animation du premier point du loader*/
 .loader-dots div:nth-child(1) {
   left: 2rem;
   animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
   -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
 }
 
+/*position et décalage de l'animation  du deuxième point du loader*/
 .loader-dots div:nth-child(2) {
   left: 6rem;
   animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
   -webkit-animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
 }
 
+/*position et décalage de l'animation du troisième point du loader*/
 .loader-dots div:nth-child(3) {
   left: 10rem;
   animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
   -webkit-animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
 }
 
+/*animation sur les points du loader : transformation de leur taille*/
 @keyframes pulsar {
   0%, 20% {
     transform: scale(0.5);
@@ -404,6 +434,7 @@ p {
     -o-transform: scale(0.8);
   }
 }
+/*dimensions, couleur de fonds et position du logo*/
 header {
   width: auto;
   height: auto;
@@ -417,6 +448,7 @@ header {
   }
 }
 
+/*propriété flex appliquée du main de la page d'accueil*/
 .home-main-container {
   display: flex;
   flex-direction: column;
@@ -434,6 +466,7 @@ header {
   }
 }
 
+/*propriété flex, position, bordures et dimensions du main dans les pages des menus*/
 .menu-main-container {
   display: flex;
   flex-direction: column;
@@ -464,8 +497,7 @@ header {
     top: 6rem;
     opacity: 0.95;
   }
-}
-
+} /*position, couleur de fonds et dimension du footer pour toutes les pages*/
 footer {
   position: relative;
   width: auto;
@@ -480,26 +512,27 @@ footer {
   }
 }
 
+/*marge du menu de navigation et hauteur de ligne pour le menu de navigation avec positions et dimensions de ses éléments*/
 .nav {
-  color: white;
   margin: 1rem 1rem 1rem 1rem;
   line-height: 2rem;
+}
+.nav__container {
+  width: auto;
 }
 @media all and (min-width: 767px) {
   .nav__container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
   }
 }
-.nav__logo {
+.nav__logo--footer {
   margin: 1rem 0 1rem 0;
-  font-weight: 300;
-  font-family: "Shrikhand", "Roboto", sans-serif;
+  color: white;
 }
 @media all and (min-width: 767px) {
-  .nav__logo {
+  .nav__logo--footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,11 +546,8 @@ footer {
   line-height: 1rem;
   padding: 0 1rem 0 1rem;
 }
-.nav__link-icon .fa-utensils {
-  position: relative;
-  right: 0.5rem;
-}
-.nav__link-icon .fa-handshake-angle {
+.nav .fa-utensils,
+.nav .fa-handshake-angle {
   position: relative;
   right: 0.5rem;
 }
@@ -533,6 +563,7 @@ footer {
   color: #FF79DA;
 }
 
+/*propriété flex et dimensions pour la partie présentation du site*/
 .presentation {
   display: flex;
   flex-direction: column;
@@ -576,6 +607,7 @@ footer {
   font-weight: 300;
 }
 
+/*propriétés flex, dimensions, marges, couleurs et changement de couleur de la partie "fonctionnement"*/
 .functioning {
   width: auto;
   height: auto;
@@ -596,7 +628,6 @@ footer {
 @media all and (min-width: 992px) {
   .functioning {
     width: 100%;
-    flex-direction: row;
     align-items: center;
   }
 }
@@ -683,6 +714,7 @@ footer {
   opacity: 1;
 }
 
+/*propriétés flex, dimensions et marges du conteneur englobant titre et cartes de la partie "restaurant"*/
 .container-restaurant {
   display: flex;
   flex-direction: column;
@@ -708,22 +740,6 @@ footer {
     flex-direction: row;
   }
 }
-.container-restaurant__cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: auto;
-  height: auto;
-}
-@media all and (min-width: 767px) {
-  .container-restaurant__cards {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 4rem 0 1rem 0;
-  }
-}
 .container-restaurant__heading {
   width: auto;
   height: auto;
@@ -741,7 +757,24 @@ footer {
     margin-left: 2rem;
   }
 }
+.container-restaurant__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+@media all and (min-width: 767px) {
+  .container-restaurant__cards {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 4rem 0 1rem 0;
+  }
+}
 
+/*propriétés flex, dimensions, marges et effets de transitions du conteneur de chaque carte */
 .restaurant {
   position: relative;
   width: auto;
@@ -783,6 +816,10 @@ footer {
   width: 100%;
   height: 250px;
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -webkit-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -moz-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -ms-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  -o-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
 .restaurant__card {
   display: flex;
@@ -845,6 +882,7 @@ footer {
   bottom: 1rem;
 }
 
+/*Propriétés pour aligner icône et logo dans l'entête  */
 .header-menu {
   display: flex;
   align-items: center;
@@ -867,6 +905,7 @@ footer {
   }
 }
 
+/*position et dimensions des images*/
 .heading-image {
   width: 100%;
   height: auto;
@@ -887,6 +926,7 @@ footer {
   object-fit: cover;
 }
 
+/*background avec images pour la version desktop*/
 @media all and (min-width: 992px) {
   .heading-image,
 .heading-image__first-dimension,
@@ -899,7 +939,7 @@ footer {
     background-repeat: no-repeat;
   }
   .delite-senses--bg-page {
-    background-image: url("assets/img/A_la_Française.jpg");
+    background-image: url("assets/img/Le_délice_des_sens.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -914,6 +954,7 @@ footer {
     background-repeat: no-repeat;
   }
 }
+/*dimensions et position du titre du restaurant et du bouton "jaime"*/
 .menu-main-container__heading {
   line-height: 3rem;
   width: auto;
@@ -934,6 +975,9 @@ footer {
   background-color: #f2f2f2;
 }
 
+/*dimensions, positions et propriétés flex de la section contenant "entrée"/"plats"/"dessert" avec les menus, 
+/*Avec animations faisant apparaître les plats au chargement de la page*/
+/*Et animation pour la sélection des plats*/
 .menu {
   width: auto;
   height: auto;
@@ -990,11 +1034,11 @@ footer {
   padding: 0;
   margin-bottom: 1rem;
   box-shadow: 0.5rem 0.2rem 1rem rgb(202, 198, 198);
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: 0.938rem 0.938rem 0.938rem 0.938rem;
+  -webkit-border-radius: 0.938rem 0.938rem 0.938rem 0.938rem;
+  -moz-border-radius: 0.938rem 0.938rem 0.938rem 0.938rem;
+  -ms-border-radius: 0.938rem 0.938rem 0.938rem 0.938rem;
+  -o-border-radius: 0.938rem 0.938rem 0.938rem 0.938rem;
   background-color: white;
   cursor: pointer;
   overflow: hidden;
@@ -1006,8 +1050,8 @@ footer {
   }
 }
 .menu__selection--first-apparition {
-  animation: first-apparition 1000ms 1950ms ease-in;
-  -webkit-animation: first-apparition 1000ms 1950ms ease-in;
+  animation: first-apparition 1000ms ease-in;
+  -webkit-animation: first-apparition 1000ms ease-in;
 }
 @keyframes first-apparition {
   0% {
@@ -1032,8 +1076,8 @@ footer {
 }
 .menu__selection--second-apparition {
   transform-origin: bottom;
-  animation: second-apparition 1200ms 1980ms ease-in;
-  -webkit-animation: second-apparition 1200ms 1980ms ease-in;
+  animation: second-apparition 1200ms ease-in;
+  -webkit-animation: second-apparition 1200ms ease-in;
 }
 @keyframes second-apparition {
   0% {
@@ -1058,8 +1102,8 @@ footer {
 }
 .menu__selection--third-apparition {
   transform-origin: bottom;
-  animation: third-apparition 1400ms 1990ms ease-in;
-  -webkit-animation: third-apparition 1400ms 1990ms ease-in;
+  animation: third-apparition 1400ms ease-in;
+  -webkit-animation: third-apparition 1400ms ease-in;
 }
 @keyframes third-apparition {
   0% {
@@ -1084,8 +1128,8 @@ footer {
 }
 .menu__selection--fourth-apparition {
   transform-origin: bottom;
-  animation: fourth-apparition 1600ms 2000ms ease-in;
-  -webkit-animation: fourth-apparition 1600ms 2000ms ease-in;
+  animation: fourth-apparition 1600ms ease-in;
+  -webkit-animation: fourth-apparition 1600ms ease-in;
 }
 @keyframes fourth-apparition {
   0% {
@@ -1108,46 +1152,6 @@ footer {
     -o-transform: translate(0, 0);
   }
 }
-.menu__selection:active .menu__price {
-  transform: translate(-5rem);
-  -webkit-transform: translate(-5rem);
-  -moz-transform: translate(-5rem);
-  -ms-transform: translate(-5rem);
-  -o-transform: translate(-5rem);
-}
-@media all and (min-width: 992px) {
-  .menu__selection:hover .menu__price {
-    transform: translate(-5rem);
-    -webkit-transform: translate(-5rem);
-    -moz-transform: translate(-5rem);
-    -ms-transform: translate(-5rem);
-    -o-transform: translate(-5rem);
-  }
-}
-.menu__selection:active .menu__container-selection {
-  padding-right: 8rem;
-}
-@media all and (min-width: 992px) {
-  .menu__selection:hover .menu__container-selection {
-    padding-right: 8rem;
-  }
-}
-.menu__selection:active .menu__check {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-}
-@media all and (min-width: 992px) {
-  .menu__selection:hover .menu__check {
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-  }
-}
 .menu__container-selection {
   display: flex;
   flex-direction: column;
@@ -1166,6 +1170,14 @@ footer {
   -moz-transition: padding-right 500ms ease-in-out;
   -ms-transition: padding-right 500ms ease-in-out;
   -o-transition: padding-right 500ms ease-in-out;
+}
+.menu__selection:active .menu__container-selection {
+  padding-right: 8rem;
+}
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__container-selection {
+    padding-right: 8rem;
+  }
 }
 .menu__name {
   width: 100%;
@@ -1211,6 +1223,22 @@ footer {
     right: 1rem;
   }
 }
+.menu__selection:active .menu__price {
+  transform: translate(-5rem);
+  -webkit-transform: translate(-5rem);
+  -moz-transform: translate(-5rem);
+  -ms-transform: translate(-5rem);
+  -o-transform: translate(-5rem);
+}
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__price {
+    transform: translate(-5rem);
+    -webkit-transform: translate(-5rem);
+    -moz-transform: translate(-5rem);
+    -ms-transform: translate(-5rem);
+    -o-transform: translate(-5rem);
+  }
+}
 .menu__check {
   width: 5rem;
   height: 100%;
@@ -1230,7 +1258,24 @@ footer {
   -ms-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
 }
+.menu__selection:active .menu__check {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+@media all and (min-width: 992px) {
+  .menu__selection:hover .menu__check {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+  }
+}
 
+/*dimensions, position et effet de transition avec rotation vers la gauche de l'icone de sélection des plats*/
 .fa-circle-check {
   display: inline-block;
   display: flex;
@@ -1252,6 +1297,7 @@ footer {
   color: white;
 }
 
+/*au clic sur le menu : l'animation de sélection du plat se déclenche*/
 .menu__selection:active .fa-circle-check {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -1260,6 +1306,7 @@ footer {
   -o-transform: rotate(360deg);
 }
 
+/*au survol du menu : l'animation de sélection du plat se déclenche*/
 @media all and (min-width: 992px) {
   .menu__selection:hover .fa-circle-check {
     transform: rotate(360deg);
@@ -1269,6 +1316,7 @@ footer {
     -o-transform: rotate(360deg);
   }
 }
+/*centrage du bouton "commander"*/
 .button-container {
   display: flex;
   justify-content: center;

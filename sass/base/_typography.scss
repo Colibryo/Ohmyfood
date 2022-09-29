@@ -1,68 +1,88 @@
+/*font de l'ensemble de la page et hauteur de lignes réduite*/
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 130%;
 }
 
+/*taille du texte des h1*/
 h1 {
     font-size: 1.6rem;
 }
 
+/*taille et gras du texte des h2*/
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+/*taille et gras du texte des h3*/
 h3 {
     font-size: 1.1rem;
     font-weight: 700;
 
+    //taille et gras du texte des h3 pour version petits mobiles
     @include small-mobile-only {
         font-size: 0.9rem;
     }
 }
 
+/*taille du texte des paragraphes*/
 p {
     font-size: 1rem;
 
+    //taille du texte des paragraphes pour version petits mobiles
     @include small-mobile-only {
         font-size: 0.8rem;
     }
 }
 
+/*taille du texte et gras des prix*/
 .menu__price {
     font-size: 1rem;
     font-weight: 700;
 
+    //taille et gras des prix pour version petits mobiles   
     @include small-mobile-only {
         font-size: 0.8rem;
     }
 }
 
+/*font et taille du logo en entête*/
 .logo {
     font-family: 'Shrikhand', 'Robot', sans-serif;
     font-size: 2rem;
 
+    //taille du logo pour petits mobiles
     @include small-mobile-only {
         font-size: 1.3rem;
     }
 }
 
+/*taille et gras du logo dans le footer*/
+.nav__logo--footer {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*font et taille du titre des restaurants dans les pages menus*/
 .menu-main-container h1 {
     font-family: 'Shrikhand', 'Robot', sans-serif;
     font-size: 1.8rem;
 
+    //suivi de la taille du titre pour petits mobiles
     @include small-mobile-only {
         font-size: 1.3rem;
     }
 }
 
+/*taille et gras des titres des plats dans les menus*/
 .menu__heading {
     font-size: 1.2rem;
     font-weight: 300;
 }
 
+/*taille des liens dans le footer pour version petits mobiles*/
 footer {
-
     @include small-mobile-only {
         font-size: 0.8rem;
     }

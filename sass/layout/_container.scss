@@ -1,18 +1,22 @@
+/*propriété flex appliquée du main de la page d'accueil*/
 .home-main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    // mise en ligne des parties "fonctionnement" et "restaurant" en version tablette
     @include tablette-only {
         flex-wrap: wrap;
         flex-direction: row;
     }
 
+    //mise en colonne des parties "fonctionnement" et "restaurant" en version desktop
     @include desktop-only {
         flex-direction: column;
     }
 }
 
+/*propriété flex, position, bordures et dimensions du main dans les pages des menus*/
 .menu-main-container {
     display: flex;
     flex-direction: column;
@@ -29,30 +33,33 @@
     -ms-border-radius: 25px 25px 0 0;
     -o-border-radius: 25px 25px 0 0;
 
+    //position du main des pages menues pour les versions petits mobiles
     @include small-mobile-only {
         top: 12rem;
     }
 
+    //modifications de la taille et transparence du main en version desktop
     @include desktop-only {
         width: 95%;
         height: auto;
         align-items: center;
         margin: auto;
         top: 6rem;
-        opacity:0.95
+        opacity: 0.95
     }
 }
 
+/*position, couleur de fonds et dimension du footer pour toutes les pages*/
 footer {
-    position:relative;
+    position: relative;
     width: auto;
     height: auto;
     background-color: $colour-quartery;
     padding: 1rem 0 1rem 0;
 
+    //centrage des éléments par rapport aux bords gauche et droite en version tablettes
     @include tablette-only {
         display: flex;
         justify-content: space-around;
     }
 }
-

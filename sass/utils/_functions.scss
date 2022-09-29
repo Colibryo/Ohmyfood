@@ -1,2 +1,4 @@
-@mixin text-color{ 
-color: darken($colour-tertiary, 40%);}
+//couleur de texte assombrie quant c'est la même pour le background
+@mixin text-color {
+    color: darken($colour-tertiary, 40%);
+}

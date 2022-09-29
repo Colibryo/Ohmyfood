@@ -1,3 +1,4 @@
+/*propriété flex et dimensions pour la partie présentation du site*/
 .presentation {
     display: flex;
     flex-direction: column;
@@ -8,14 +9,17 @@
     margin-bottom: 5rem;
     background-color: $background-container;
 
+    //marge de la partie présentation en version tablette
     @include tablette-only {
         margin-bottom: 1rem;
     }
 
+    //suppression de la marge de la partie présentation en version tablette
     @include desktop-only {
         margin-bottom: 0;
     }
 
+    //propriété flex, dimensions, marges, ombre et couleurs du bloc localisation de la ville avec l'icone 
     &__location {
         width: 100%;
         display: flex;
@@ -30,11 +34,13 @@
         background-color: darken($background-container, 2%);
     }
 
+    //gras et marge sur le titre dans présentation
     &__heading {
         font-weight: 900;
         margin: 2.5rem 2.5rem 0.5rem 2.5rem;
     }
 
+    //font et marge du paragraphe dans présentation
     &__discover {
         margin: 0.5rem 1.5rem 1rem 1.5rem;
         font-size: 1.2em;
@@ -42,6 +48,7 @@
     }
 }
 
+/*propriétés flex, dimensions, marges, couleurs et changement de couleur de la partie "fonctionnement"*/
 .functioning {
     width: auto;
     height: auto;
@@ -49,6 +56,7 @@
     flex-direction: column;
     margin: 0 1rem 5rem 1rem;
 
+    //dimensions, marges et mise en ligne des titres et blocs de la partie "fonctionnement"
     @include tablette-only {
         width: 35%;
         flex-wrap: wrap;
@@ -58,15 +66,17 @@
         background-color: $colour-secondary;
     }
 
+    //dimensions de la partie "fonctionnement" et alignement des éléments en version desktop
     @include desktop-only {
         width: 100%;
-        flex-direction: row;
         align-items: center;
     }
 
+    //marge du titre "fonctionnement"
     &__heading {
         padding: 0 1rem 0 1rem;
 
+        //dimensions et marges du titre "fonctionnement" en version tablette
         @include tablette-only {
             width: 100%;
             margin: 2rem;
@@ -74,6 +84,7 @@
         }
     }
 
+    //dimensions, marges et mise en colonne des blocs contenant les explications dans "fonctionnement" 
     &__container {
         width: auto;
         display: flex;
@@ -81,17 +92,20 @@
         align-items: center;
         margin: 1rem 0 1rem 1rem;
 
+        //dimensions et marges entre les éléments en version tablette
         @include tablette-only {
             width: 100%;
             gap: 5rem;
         }
 
+        //mise ne ligne et centrage des éléments en version desktop
         @include desktop-only {
             flex-direction: row;
             align-items: center;
         }
     }
 
+    //dimensions, marges et ombres des blocs contenant les explication du fonctionnement
     &__explain {
         width: 100%;
         height: 4rem;
@@ -106,15 +120,18 @@
         font-weight: 700;
         cursor: pointer;
 
+        //changement de couleur de fond des blocs pour version tablette
         @include tablette-only {
             background-color: azure;
         }
     }
 
+    //au survol des blocs : changement de couleur
     &__explain:hover {
         background-color: hsl(267, 66%, 94%);
     }
 
+    //position, dimensions, marges et couleur des chiffres sur les blocs
     &__number {
         display: inline-block;
         position: relative;
@@ -131,24 +148,28 @@
         font-weight: 700;
         color: $colour-text;
 
+        //changement de taille en version tablette
         @include tablette-only {
             width: 1rem;
             height: 1rem;
         }
     }
 
+    //position et transparence des icones dans les blocs  
     &__explain .fa-solid {
         position: relative;
         right: 1.5rem;
         opacity: (0.5);
     }
 
+    //au survol des blocs : changement de couleur des icones   
     &__explain:hover .fa-solid {
         color: $colour-primary;
         opacity: 1;
     }
 }
 
+/*propriétés flex, dimensions et marges du conteneur englobant titre et cartes de la partie "restaurant"*/
 .container-restaurant {
     display: flex;
     flex-direction: column;
@@ -159,6 +180,7 @@
     background-color: $background-container;
     padding-bottom: 5rem;
 
+    //dimensions et marges entre les éléments en version tablette
     @include tablette-only {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -167,11 +189,32 @@
         padding-bottom: 6rem;
     }
 
+    //changement en version desktop :  pleine largeur
     @include desktop-only {
         width: 100%;
         flex-direction: row;
     }
 
+    //dimensions et marges du titre "restaurants"
+    &__heading {
+        width: auto;
+        height: auto;
+        padding: 3rem 1rem 0 1rem;
+        margin: $margin-elements;
+
+        //changement de marge en version tablette
+        @include tablette-only {
+            margin: 0;
+        }
+
+        //changement de marge en version desktop
+        @include desktop-only {
+            padding: 3rem 1rem 3rem 1rem;
+            margin-left: 2rem;
+        }
+    }
+
+    //propriétés flex et dimensions du conteneur des cartes
     &__cards {
         display: flex;
         flex-direction: column;
@@ -179,6 +222,7 @@
         width: auto;
         height: auto;
 
+        //changement des propriétés flex, marges et dimensions du conteneur des cartes en verion desktop
         @include tablette-only {
             width: 100%;
             flex-direction: row;
@@ -186,26 +230,10 @@
             gap: 10px;
             padding: 4rem 0 1rem 0;
         }
-
-    }
-
-    &__heading {
-        width: auto;
-        height: auto;
-        padding: 3rem 1rem 0 1rem;
-        margin: $margin-elements;
-
-        @include tablette-only {
-            margin: 0;
-        }
-
-        @include desktop-only {
-            padding: 3rem 1rem 3rem 1rem;
-            margin-left: 2rem;
-        }
     }
 }
 
+/*propriétés flex, dimensions, marges et effets de transitions du conteneur de chaque carte */
 .restaurant {
     position: relative;
     width: auto;
@@ -221,17 +249,20 @@
     -o-transition: transform 100ms ease-in-out;
     background-color: white;
 
+    //largeur et marge en version tablette
     @include tablette-only {
         width: 45%;
         margin: 0.2rem;
     }
 
+    //dimensions et marge en version desktop
     @include desktop-only {
         width: 40%;
         height: 350px;
         margin: 1rem;
     }
 
+    //agrandissement des cartes au survol
     &:hover {
         transform: scale(1.02);
         -webkit-transform: scale(1.02);
@@ -241,13 +272,19 @@
         @include initial-shadow-element;
     }
 
+    //dimensions et bordures des blocs de liens englobant les cartes
     &__link {
         display: inline-block;
         width: 100%;
         height: 250px;
         border-radius: $border-card;
+        -webkit-border-radius: $border-card;
+        -moz-border-radius: $border-card;
+        -ms-border-radius: $border-card;
+        -o-border-radius: $border-card;
     }
 
+    //propriétés flex, dimensions et bordures des cartes restaurants
     &__card {
         display: flex;
         flex-direction: column;
@@ -260,6 +297,7 @@
         -ms-border-radius: $border-card;
         -o-border-radius: $border-card;
 
+        //dimensions et marges en version desktop
         @include desktop-only {
             width: auto;
             height: 350px;
@@ -267,6 +305,7 @@
         }
     }
 
+    //propriétés flex, dimensions et bordures du conteneur des images des cartes
     &__container-img {
         width: 100%;
         height: 200px;
@@ -277,11 +316,13 @@
         -ms-border-radius: 20px 20px 0 0;
         -o-border-radius: 20px 20px 0 0;
 
+        //changement de hauteur pour la version desktop
         @include desktop-only {
             height: 300px;
         }
     }
 
+    //propriétés et dimensions de l'image des cartes
     &__img {
         object-fit: cover;
         width: 100%;
@@ -293,6 +334,7 @@
         -o-border-radius: 20px 20px 0 0;
     }
 
+    //dimensions et bordure du footer des cartes 
     &__footer {
         width: auto;
         height: auto;
@@ -305,6 +347,7 @@
     }
 }
 
+//position du bouton "j'aime"
 .like--card-position {
     position: absolute;
     right: 2rem;

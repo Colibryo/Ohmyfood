@@ -1,3 +1,4 @@
+/*position, dimension, couleurs et effets de transition des boutons "explorer nos restaurants" et "commander"*/
 .button-action {
     display: inline-block;
     position: relative;
@@ -24,20 +25,24 @@
     -o-transition: background-color;
     z-index: 1;
 
+    // changement de largeur des boutons en version tablette
     @include tablette-only {
         width: 15rem;
     }
 
+    // changement de largeur des boutons en version desktop
     @include desktop-only {
         width: 18rem;
     }
 
+    // au survol : changement de transparence des boutons identiques en arrière plan 
     &:hover {
         &::after {
             opacity: 1;
         }
     }
 
+    // boutons devenant plus clairs avec une ombre plus prononcée 
     &::after {
         content: "";
         position: absolute;

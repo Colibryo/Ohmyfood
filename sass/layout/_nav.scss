@@ -1,23 +1,26 @@
+/*marge du menu de navigation et hauteur de ligne pour le menu de navigation avec positions et dimensions de ses éléments*/
 .nav {
-    color: white;
     margin: $margin-elements;
     line-height: 2rem;
 
+    //largeur du bloc contenant les liens
     &__container {
+        width: auto;
 
+        //container : propriétés flex pour les éléments dans le conteneur du menu navigation en version tablette
         @include tablette-only {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             align-items: center;
         }
     }
 
-    &__logo {
+    //dimension et couleur du logo
+    &__logo--footer {
         margin: 1rem 0 1rem 0;
-        font-weight: 300;
-        font-family: 'Shrikhand', 'Roboto', sans-serif;
+        color: white;
 
+        //propriétés flex pour centrer le logo en version tablette       
         @include tablette-only {
             display: flex;
             justify-content: center;
@@ -25,6 +28,7 @@
         }
     }
 
+    //position et dimension des blocs des liens
     &__link-icon {
         display: inline-block;
         height: 1rem;
@@ -32,27 +36,26 @@
         right: 0.5rem;
         line-height: 1rem;
         padding: 0 1rem 0 1rem;
-
     }
 
-    &__link-icon .fa-utensils {
+    //position et dimension des icones dans les liens
+    .fa-utensils,
+    .fa-handshake-angle {
         position: relative;
         right: 0.5rem;
     }
 
-    &__link-icon .fa-handshake-angle {
-        position: relative;
-        right: 0.5rem;
-    }
-
+    //couleur des liens
     &__link--color {
         color: white;
 
+        //marge des liens du menu navigation en version tablette*/
         @include tablette-only {
             margin: $margin-elements;
         }
     }
 
+    //au survol, changement de couleur des liens du menu navigation
     &__link--color:hover {
         color: $colour-secondary;
     }

@@ -1,8 +1,10 @@
+/*Propriétés pour aligner icône et logo dans l'entête  */
 .header-menu {
   display: flex;
   align-items: center;
   justify-content: center;
 
+  //dimensions et placement de l'icône de retour sur la page d'accueil
   &__return {
     width: auto;
     position: absolute;
@@ -11,11 +13,13 @@
     font-size: 1.5rem;
   }
 
+  //position du logo
   .logo {
     position: relative;
     width: auto;
   }
 
+  //position de l'icône pour la version desktop
   @include desktop-only {
     &__return {
       left: 3rem;
@@ -23,19 +27,23 @@
   }
 }
 
-.heading-image{
+/*position et dimensions des images*/
+.heading-image {
   width: 100%;
   height: auto;
   min-height: 15rem;
   position: absolute;
   overflow: hidden;
 
+  //une des dimensions définie pour ajuster les images au visuel 
   &__first-dimension {
     position: absolute;
     width: 100%;
     height: 114%;
     object-fit: cover;
-  } 
+  }
+
+  //une autre des dimensions définie pour ajuster les images au visuel 
   &__second-dimension {
     position: absolute;
     width: 100%;
@@ -44,6 +52,7 @@
   }
 }
 
+/*background avec images pour la version desktop*/
 @include desktop-only {
 
   .heading-image,
@@ -52,29 +61,35 @@
     display: none;
   }
 
+  //background de la page "A la Française"
   .french-style--bg-page {
     background-image: url("assets/img/A_la_Française.jpg");
     @include display-bg-img;
   }
 
+  //background de la page "Le délice des sens""
   .delite-senses--bg-page {
-    background-image: url("assets/img/A_la_Française.jpg");
+    background-image: url("assets/img/Le_délice_des_sens.jpg");
     @include display-bg-img;
   }
 
+  //background de la page "la note enchantée"
   .enchanted-note--bg-page {
     background-image: url("assets/img/La_note_enchantée.jpg");
     @include display-bg-img;
   }
 
+  //background de la page "la palette du goût"
   .palette-of-taste--bg-page {
     background-image: url("assets/img/La_palette_du_goût.jpg");
     @include display-bg-img;
   }
 }
 
+/*dimensions et position du titre du restaurant et du bouton "jaime"*/
 .menu-main-container {
 
+  //position et dimension du titre
   &__heading {
     line-height: 3rem;
     width: auto;
@@ -83,11 +98,13 @@
     margin: $margin-elements;
     padding-right: 3rem;
 
+    //marge en version desktop
     @include desktop-only {
       padding-right: 6rem;
     }
   }
 
+  //position et couleur du background du bouton j'aime
   &__heading .like--menu-position {
     position: absolute;
     top: 0.7rem;
@@ -96,6 +113,9 @@
   }
 }
 
+/*dimensions, positions et propriétés flex de la section contenant "entrée"/"plats"/"dessert" avec les menus, 
+/*Avec animations faisant apparaître les plats au chargement de la page*/
+/*Et animation pour la sélection des plats*/
 .menu {
   width: auto;
   height: auto;
@@ -103,10 +123,12 @@
   flex-direction: column;
   margin: $margin-elements;
 
+  //marge pour la version mobile
   @include small-mobile-only {
     margin: 0.8rem;
   }
 
+  //changement de direction, position et taille pour la version desktop
   @include desktop-only {
     position: relative;
     top: 1rem;
@@ -117,9 +139,11 @@
     flex-wrap: wrap;
   }
 
+  //marges pour le conteneur des titres "entrée"/"plats"/"dessert" et du soulignement
   &__title-container {
     margin: 1rem 0rem 1rem 0rem;
 
+    //position et dimensions pour la version desktop
     @include desktop-only {
       position: absolute;
       bottom: 5.5rem;
@@ -129,10 +153,12 @@
     }
   }
 
+  //marges de "entrée"/"plats"/"dessert" pour la version desktop
   &__heading {
     padding-bottom: 0.5rem;
   }
 
+  //position du titre "entrée" pour la version desktop quand il ya plus de 3 menus
   &__heading--larger {
     @include desktop-only {
       position: absolute;
@@ -140,11 +166,13 @@
     }
   }
 
+  //dimensions et couleur du soulignement des titres "entrée"/"plats"/"dessert"
   &__underline {
     width: 3rem;
     border-bottom: solid 0.3rem $colour-tertiary;
   }
 
+  //propriétés flex, dimensions, bordure et couleur de fonds de chacun des menus
   &__selection {
     display: flex;
     flex-direction: row;
@@ -153,25 +181,28 @@
     padding: 0;
     margin-bottom: 1rem;
     @include initial-shadow-element;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border-radius: $border-selector;
+    -webkit-border-radius: $border-selector;
+    -moz-border-radius: $border-selector;
+    -ms-border-radius: $border-selector;
+    -o-border-radius: $border-selector;
     background-color: white;
     cursor: pointer;
     overflow: hidden;
 
+    //largeur et dimension pour version desktop
     @include desktop-only {
       width: 30%;
       margin: 0.5rem;
     }
   }
 
+  //animation pour faire apparaître des plats les uns après les autres à l'ouverture de la page
+  //animation pour le premier plat 
   &__selection--first-apparition {
-    animation: first-apparition 1000ms 1950ms ease-in;
-    -webkit-animation: first-apparition 1000ms 1950ms ease-in;
-}
+    animation: first-apparition 1000ms ease-in;
+    -webkit-animation: first-apparition 1000ms ease-in;
+  }
 
   @keyframes first-apparition {
     0% {
@@ -181,7 +212,7 @@
       -moz-transform: translate(0, 2.5rem);
       -ms-transform: translate(0, 2.5rem);
       -o-transform: translate(0, 2.5rem);
-}
+    }
 
     95% {
       opacity: 0.2;
@@ -197,11 +228,12 @@
     }
   }
 
+  //animation pour le second plat
   &__selection--second-apparition {
     transform-origin: bottom;
-    animation: second-apparition 1200ms 1980ms ease-in;
-    -webkit-animation: second-apparition 1200ms 1980ms ease-in;
-}
+    animation: second-apparition 1200ms ease-in;
+    -webkit-animation: second-apparition 1200ms ease-in;
+  }
 
   @keyframes second-apparition {
     0% {
@@ -211,7 +243,7 @@
       -moz-transform: translate(0, 2.5rem);
       -ms-transform: translate(0, 2.5rem);
       -o-transform: translate(0, 2.5rem);
-}
+    }
 
     95% {
       opacity: 0.2;
@@ -227,11 +259,12 @@
     }
   }
 
+  //animation pour le troisième plat
   &__selection--third-apparition {
     transform-origin: bottom;
-    animation: third-apparition 1400ms 1990ms ease-in;
-    -webkit-animation: third-apparition 1400ms 1990ms ease-in;
-}
+    animation: third-apparition 1400ms ease-in;
+    -webkit-animation: third-apparition 1400ms ease-in;
+  }
 
   @keyframes third-apparition {
     0% {
@@ -241,7 +274,7 @@
       -moz-transform: translate(0, 2.5rem);
       -ms-transform: translate(0, 2.5rem);
       -o-transform: translate(0, 2.5rem);
-}
+    }
 
     95% {
       opacity: 0.2;
@@ -257,11 +290,12 @@
     }
   }
 
+  //animation pour le quatrième plat
   &__selection--fourth-apparition {
     transform-origin: bottom;
-    animation: fourth-apparition 1600ms 2000ms ease-in;
-    -webkit-animation: fourth-apparition 1600ms 2000ms ease-in;
-}
+    animation: fourth-apparition 1600ms ease-in;
+    -webkit-animation: fourth-apparition 1600ms ease-in;
+  }
 
   @keyframes fourth-apparition {
     0% {
@@ -271,7 +305,7 @@
       -moz-transform: translate(0, 2.5rem);
       -ms-transform: translate(0, 2.5rem);
       -o-transform: translate(0, 2.5rem);
-}
+    }
 
     95% {
       opacity: 0.2;
@@ -287,52 +321,7 @@
     }
   }
 
-  &__selection:active &__price {
-    transform: translate(-5rem);
-    -webkit-transform: translate(-5rem);
-    -moz-transform: translate(-5rem);
-    -ms-transform: translate(-5rem);
-    -o-transform: translate(-5rem);
-  }
-
-  @include desktop-only {
-    &__selection:hover &__price {
-      transform: translate(-5rem);
-      -webkit-transform: translate(-5rem);
-      -moz-transform: translate(-5rem);
-      -ms-transform: translate(-5rem);
-      -o-transform: translate(-5rem);
-    }
-  }
-
-  &__selection:active &__container-selection {
-    padding-right: 8rem;
-  }
-
-  @include desktop-only {
-    &__selection:hover &__container-selection {
-      padding-right: 8rem;
-    }
-  }
-
-  &__selection:active &__check {
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-  }
-
-  @include desktop-only {
-    &__selection:hover &__check {
-      transform: scaleX(1);
-      -webkit-transform: scaleX(1);
-      -moz-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      -o-transform: scaleX(1);
-    }
-  }
-
+  //propriétés flex, dimensions et transition vers la gauche du sélecteur dans les menus
   &__container-selection {
     display: flex;
     flex-direction: column;
@@ -353,22 +342,39 @@
     -o-transition: padding-right 500ms ease-in-out;
   }
 
+  //au clic, modification de la marge lors de la sélection du menu 
+  &__selection:active &__container-selection {
+    padding-right: 8rem;
+  }
+
+  //au survol, modification de la marge en version desktop 
+  @include desktop-only {
+    &__selection:hover &__container-selection {
+      padding-right: 8rem;
+    }
+  }
+
+  //si dépassement du nom du plat, alors tronqué avec ellipsis  
   &__name {
     @include dimension-text-ellipsis;
 
+    //marge pour la version desktop
     @include small-mobile-only {
       padding-left: 0.5rem;
     }
   }
 
+  //si dépassement des détail du plat, alors tronqué avec ellipsis
   &__details {
     @include dimension-text-ellipsis;
 
+    //marge pour la version petits mobiles
     @include small-mobile-only {
       padding-left: 0.5rem;
     }
   }
 
+  //dimensions, position et transition du prix lors de la sélection du menu
   &__price {
     display: inline-block;
     position: absolute;
@@ -382,11 +388,33 @@
     -ms-transition: transform 500ms ease-in-out;
     -o-transition: transform 500ms ease-in-out;
 
+    //position pour les petits mobiles
     @include small-mobile-only {
       right: 1rem;
     }
   }
 
+  //animation :  le prix se décale au clic 
+  &__selection:active &__price {
+    transform: translate(-5rem);
+    -webkit-transform: translate(-5rem);
+    -moz-transform: translate(-5rem);
+    -ms-transform: translate(-5rem);
+    -o-transform: translate(-5rem);
+  }
+
+  //animation :  le prix se décale au survol pour la version desktop 
+  @include desktop-only {
+    &__selection:hover &__price {
+      transform: translate(-5rem);
+      -webkit-transform: translate(-5rem);
+      -moz-transform: translate(-5rem);
+      -ms-transform: translate(-5rem);
+      -o-transform: translate(-5rem);
+    }
+  }
+
+  //dimensions, position initiale et transition du bloc "check" contenant l'icone de sélection du plat
   &__check {
     width: 5rem;
     height: 100%;
@@ -405,10 +433,31 @@
     -moz-transition: transform 500ms ease-in-out;
     -ms-transition: transform 500ms ease-in-out;
     -o-transition: transform 500ms ease-in-out;
-
   }
+
+  //au clic : agrandissement du bloc "check"
+  &__selection:active &__check {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+  }
+
+  //au survol : agrandissement du bloc "check" pour la version desktop
+  @include desktop-only {
+    &__selection:hover &__check {
+      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+    }
+  }
+
 }
 
+/*dimensions, position et effet de transition avec rotation vers la gauche de l'icone de sélection des plats*/
 .fa-circle-check {
   display: inline-block;
   display: flex;
@@ -430,6 +479,7 @@
   color: white;
 }
 
+/*au clic sur le menu : l'animation de sélection du plat se déclenche*/
 .menu__selection:active .fa-circle-check {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -439,6 +489,7 @@
 
 }
 
+/*au survol du menu : l'animation de sélection du plat se déclenche*/
 @include desktop-only {
   .menu__selection:hover .fa-circle-check {
     transform: rotate(360deg);
@@ -449,6 +500,7 @@
   }
 }
 
+/*centrage du bouton "commander"*/
 .button-container {
   display: flex;
   justify-content: center;

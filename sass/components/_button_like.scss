@@ -1,3 +1,4 @@
+/*bouton like : position, taille, forme, couleur et effets de transition des boutons "j'aime"*/
 .like {
     display: inline-block;
     display: flex;
@@ -15,6 +16,7 @@
     -o-border-radius: 50%;
     cursor: pointer;
 
+    //au clic : le coeur coloré change de taille pour remplir le coeur initial
     &:active>.like__after {
         transform: scale(1.15);
         -webkit-transform: scale(1.15);
@@ -23,6 +25,7 @@
         -o-transform: scale(1.15);
     }
 
+    //au survol : le coeur coloré change de taille pour remplir le coeur initial en version desktop
     @include desktop-only {
         &:hover>.like__after {
             transform: scale(1.15);
@@ -31,6 +34,8 @@
             -ms-transform: scale(1.15);
             -o-transform: scale(1.15);
         }
+
+        //dimensions, position et bordure du span contenant le coeur initial
     }
 
     &__before {
@@ -46,6 +51,7 @@
         -o-border-radius: 50%;
     }
 
+    //dimensions, position, bordure, couleur graduée et agrandissement du span et du coeur remplissant le coeur initial
     &__after {
         display: inline-block;
         font-size: 1.6rem;
@@ -67,5 +73,5 @@
         -moz-transition: transform 300ms ease-in-out;
         -ms-transition: transform 300ms ease-in-out;
         -o-transition: transform 300ms ease-in-out;
-}
+    }
 }
