@@ -81,7 +81,7 @@ h3 {
 
 /*taille du texte des paragraphes*/
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 @media all and (max-width: 360px) {
   p {
@@ -306,13 +306,17 @@ p {
   position: fixed;
   top: 0;
   background-color: #99E2D0;
-  animation: opacity 1000ms 2100ms both;
-  -webkit-animation: opacity 1000ms 2100ms both;
-  /*animation pour l'apparition et de la disparition du loader laissant place à la page chargée*/
+  animation: opacity 2000ms 2100ms both;
+  -webkit-animation: opacity 2000ms 2100ms both;
+  /*animationpourl'apparitionetdeladisparitionduloaderlaissantplaceàlapagechargée*/
 }
 @keyframes opacity {
   0% {
     opacity: 1;
+    z-index: 4;
+  }
+  70% {
+    opacity: 0.3;
     z-index: 4;
   }
   100% {
@@ -328,14 +332,14 @@ p {
   font-family: "Shrikhand", sans-serif;
   width: 20rem;
   height: 8rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 95%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: loader 1500ms 100ms cubic-bezier(1, 0.8, 0.3, 5) 1;
-  -webkit-animation: loader 1500ms 1200ms cubic-bezier(2, 1.8, 3, 5) 1;
+  animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1, 0.8) 3;
+  -webkit-animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1, 0.8) 3;
 }
 
 /*animation du logo dans le loader*/
@@ -399,22 +403,22 @@ p {
 /*position et décalage de l'animation du premier point du loader*/
 .loader-dots div:nth-child(1) {
   left: 2rem;
-  animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
-  -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
+  animation: pulsar 1200ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+  -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
 }
 
 /*position et décalage de l'animation  du deuxième point du loader*/
 .loader-dots div:nth-child(2) {
   left: 6rem;
-  animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
-  -webkit-animation: pulsar 1300ms 600ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
+  animation: pulsar 1300ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+  -webkit-animation: pulsar 1300ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
 }
 
 /*position et décalage de l'animation du troisième point du loader*/
 .loader-dots div:nth-child(3) {
   left: 10rem;
-  animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
-  -webkit-animation: pulsar 1500ms 700ms cubic-bezier(0.2, 0.4, 0.2, 5) 2;
+  animation: pulsar 1500ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+  -webkit-animation: pulsar 1500ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
 }
 
 /*animation sur les points du loader : transformation de leur taille*/
@@ -427,11 +431,11 @@ p {
     -o-transform: scale(0.5);
   }
   50%, 100% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
   }
 }
 /*dimensions, couleur de fonds et position du logo*/
@@ -571,7 +575,7 @@ footer {
   height: auto;
   text-align: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background-color: #f2f2f2;
 }
 @media all and (min-width: 767px) {
@@ -613,7 +617,7 @@ footer {
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 5rem 1rem;
+  margin: 0 1rem 2rem 1rem;
 }
 @media all and (min-width: 767px) {
   .functioning {
@@ -689,23 +693,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
+  width: 1.2rem;
   height: 1.5rem;
-  padding: 1rem;
+  padding: 0.9rem;
   background-color: #9356DC;
   border-radius: 50%;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
 }
 @media all and (min-width: 767px) {
   .functioning__number {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 .functioning__explain .fa-solid {
   position: relative;
+  font-size: 1.2rem;
   right: 1.5rem;
   opacity: 0.5;
 }
@@ -1182,28 +1187,18 @@ footer {
 .menu__name {
   width: 100%;
   height: auto;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-@media all and (max-width: 360px) {
-  .menu__name {
-    padding-left: 0.5rem;
-  }
 }
 .menu__details {
   width: 100%;
   height: auto;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-@media all and (max-width: 360px) {
-  .menu__details {
-    padding-left: 0.5rem;
-  }
 }
 .menu__price {
   display: inline-block;

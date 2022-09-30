@@ -357,21 +357,11 @@
   //si dépassement du nom du plat, alors tronqué avec ellipsis  
   &__name {
     @include dimension-text-ellipsis;
-
-    //marge pour la version desktop
-    @include small-mobile-only {
-      padding-left: 0.5rem;
-    }
   }
 
   //si dépassement des détail du plat, alors tronqué avec ellipsis
   &__details {
     @include dimension-text-ellipsis;
-
-    //marge pour la version petits mobiles
-    @include small-mobile-only {
-      padding-left: 0.5rem;
-    }
   }
 
   //dimensions, position et transition du prix lors de la sélection du menu

@@ -28,7 +28,7 @@ h3 {
 
 /*taille du texte des paragraphes*/
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
 
     //taille du texte des paragraphes pour version petits mobiles
     @include small-mobile-only {
