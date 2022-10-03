@@ -342,7 +342,7 @@ p {
   font-family: "Shrikhand", sans-serif;
   width: 20rem;
   height: 8rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 95%);
   background-clip: text;
@@ -564,6 +564,11 @@ footer {
 .nav .fa-handshake-angle {
   position: relative;
   right: 0.5rem;
+}
+.nav__link {
+  display: inline-block;
+  height: 1rem;
+  line-height: 1rem;
 }
 .nav__link--color {
   color: white;

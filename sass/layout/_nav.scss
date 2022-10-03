@@ -44,6 +44,12 @@
         position: relative;
         right: 0.5rem;
     }
+    //dimension des blocs des liens
+    &__link {
+    display: inline-block;
+    height: 1rem; 
+    line-height: 1rem;
+    }
 
     //couleur des liens
     &__link--color {
