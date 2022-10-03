@@ -33,7 +33,7 @@
     -ms-border-radius: 25px 25px 0 0;
     -o-border-radius: 25px 25px 0 0;
 
-    //position du main des pages menues pour les versions petits mobiles
+    //position du main des pages menus en version petits mobiles
     @include small-mobile-only {
         top: 12rem;
     }

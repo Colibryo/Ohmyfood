@@ -20,9 +20,14 @@ h3 {
     font-size: 1.1rem;
     font-weight: 700;
 
-    //taille et gras du texte des h3 pour version petits mobiles
+    //taille du texte des h3 pour version petits mobiles
     @include small-mobile-only {
         font-size: 0.9rem;
+    }
+
+    //taille du texte des h3 pour version desktop
+    @include desktop-only {
+        font-size: 1.3rem;
     }
 }
 
@@ -34,6 +39,12 @@ p {
     @include small-mobile-only {
         font-size: 0.8rem;
     }
+
+    //taille du texte des paragraphes pour version desktop
+    @include desktop-only {
+        font-size: 1.1rem;
+    }
+
 }
 
 /*taille du texte et gras des prix*/

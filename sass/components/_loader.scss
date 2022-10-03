@@ -13,17 +13,19 @@
     background-color: $colour-tertiary;
     animation: opacity 2000ms 2100ms both;
     -webkit-animation: opacity 2000ms 2100ms both;
-    /*animationpourl'apparitionetdeladisparitionduloaderlaissantplaceàlapagechargée*/
-    @keyframes opacity
-{
+
+    /*animation pour l'apparition et la disparition du loader */
+    @keyframes opacity {
         0% {
             opacity: 1;
             z-index: 4;
         }
+
         70% {
             opacity: 0.3;
             z-index: 4;
         }
+
         100% {
             opacity: 0;
             z-index: -1;
@@ -45,9 +47,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1,0.8) 3;
-        -webkit-animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1,0.8) 3;
-}
+        animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1, 0.8) 3;
+        -webkit-animation: loader 800ms 100ms cubic-bezier(0.3, 0, 0.1, 0.8) 3;
+    }
 }
 
 /*animation du logo dans le loader*/
@@ -112,25 +114,25 @@
     -o-border-radius: 50%;
 }
 
-/*position et décalage de l'animation du premier point du loader*/
+/*position et décalage de l'animation pour le premier point du loader*/
 .loader-dots div:nth-child(1) {
     left: 2rem;
-    animation: pulsar 1200ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
-    -webkit-animation: pulsar 1200ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+    animation: pulsar 1100ms 500ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    -webkit-animation: pulsar 1100ms 500ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 
-/*position et décalage de l'animation  du deuxième point du loader*/
+/*position et décalage de l'animation  pour deuxième point du loader*/
 .loader-dots div:nth-child(2) {
     left: 6rem;
-    animation: pulsar 1300ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
-    -webkit-animation: pulsar 1300ms 500ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+    animation: pulsar 1300ms 700ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    -webkit-animation: pulsar 1300ms 700ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 
-/*position et décalage de l'animation du troisième point du loader*/
+/*position et décalage de l'animation pour le troisième point du loader*/
 .loader-dots div:nth-child(3) {
     left: 10rem;
-    animation: pulsar 1500ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
-    -webkit-animation: pulsar 1500ms 600ms cubic-bezier(0.3, 0, 0.7, 1) 2;
+    animation: pulsar 1400ms 800ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    -webkit-animation: pulsar 1400ms 800ms cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 
 /*animation sur les points du loader : transformation de leur taille*/
@@ -152,5 +154,5 @@
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
 }

@@ -63,7 +63,6 @@
         flex-direction: row;
         margin: 0;
         padding: 1rem 1rem 6rem 1rem;
-        background-color: $colour-secondary;
     }
 
     //dimensions de la partie "fonctionnement" et alignement des éléments en version desktop
@@ -119,11 +118,7 @@
         @include initial-shadow-element;
         font-weight: 700;
         cursor: pointer;
-
-        //changement de couleur de fond des blocs pour version tablette
-        @include tablette-only {
-            background-color: azure;
-        }
+        background-color: $background-container;
     }
 
     //au survol des blocs : changement de couleur
@@ -186,8 +181,9 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 65%;
+        width: 62%;
         padding-bottom: 6rem;
+        margin: 0 1rem 1rem 0;
     }
 
     //changement en version desktop :  pleine largeur
@@ -353,4 +349,9 @@
     position: absolute;
     right: 2rem;
     bottom: 1rem;
+
+    //position du bouton pour la version tablette
+    @include tablette-only {
+        right: 1rem;
+    }
 }
